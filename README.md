@@ -1,1 +1,1 @@
-# MIDTERMS link: https://github.com/MikkoDT/MeXE402_Midterm_4102
+# MIDTERMS Instruction link: https://github.com/MikkoDT/MeXE402_Midterm_4102
