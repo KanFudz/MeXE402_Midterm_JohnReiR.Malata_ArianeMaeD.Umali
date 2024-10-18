@@ -152,7 +152,7 @@
   
 |  <img src=https://github.com/yannaaa23/Testing/blob/49510d6b3798f3f40648deb0f4c8a903a48d1fc4/hello/IMG_20230605_215028_860.jpg alt=Malata style="height: 230px; float: left;">  | <img src=https://github.com/yannaaa23/Testing/blob/49510d6b3798f3f40648deb0f4c8a903a48d1fc4/hello/IMG_20230605_215028_860.jpg alt=Umali style="height: 230px; float: left;"> |
 |         :---: |     :-----:      |
-| Malata, John Rei R. | Umali, Ariane Mae D. |
+| **Malata, John Rei R.** | **Umali, Ariane Mae D.** |
 
 </div>
 <br>
