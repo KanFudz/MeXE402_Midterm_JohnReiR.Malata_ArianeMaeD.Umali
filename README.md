@@ -154,8 +154,8 @@
 
 <table>
 <tr>
-<td><img src="https://example.com/traffic-light.png" alt="Traffic Light Diagram" width="200"/><br>*Traffic light diagram illustrating the phases of operation.*</td>
-<td><img src="https://example.com/circuit-diagram.png" alt="Circuit Diagram" width="200"/><br>*Circuit diagram showing the connections and components.*</td>
+<td><img src="https://starmometer.com/2022/06/09/bini-named-by-rolling-stone-as-one-of-spotify-radars-rising-global-artists/" alt="Malata, John Rei R." width="200"/><br>*Malata, John Rei R.*</td>
+<td><img src="https://starmometer.com/2022/06/09/bini-named-by-rolling-stone-as-one-of-spotify-radars-rising-global-artists/" alt="Umali, Ariane Mae D." width="200"/><br>*Umali, Ariane Mae D.*</td>
 </tr>
 </table>
 
