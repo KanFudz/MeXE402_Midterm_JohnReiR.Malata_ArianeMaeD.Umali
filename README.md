@@ -152,6 +152,14 @@
 <br>
 <br>
 
+<table>
+<tr>
+<td><img src="https://example.com/traffic-light.png" alt="Traffic Light Diagram" width="200"/><br>*Traffic light diagram illustrating the phases of operation.*</td>
+<td><img src="https://example.com/circuit-diagram.png" alt="Circuit Diagram" width="200"/><br>*Circuit diagram showing the connections and components.*</td>
+</tr>
+</table>
+
+
 
 
 # MIDTERMS Instruction link: https://github.com/MikkoDT/MeXE402_Midterm_4102
