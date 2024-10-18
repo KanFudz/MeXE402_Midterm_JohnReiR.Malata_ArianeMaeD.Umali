@@ -147,17 +147,18 @@
 
 
 ## VIII. Group Members
-- Malata, John Rei R.
-- Umali, Ariane Mae D.
+
+<div align="center">
+  
+|  <img src=https://github.com/yannaaa23/Testing/blob/49510d6b3798f3f40648deb0f4c8a903a48d1fc4/hello/IMG_20230605_215028_860.jpg alt=DOF-Fig style="height: 200px; float: left;">  | <img src=https://github.com/yannaaa23/Testing/blob/49510d6b3798f3f40648deb0f4c8a903a48d1fc4/hello/IMG_20230605_215028_860.jpg alt=DOF-Fig style="height: 200px; float: left;"> |
+|         :---: |     :-----:      |
+| Malata, John Rei R. | Umali, Ariane Mae D. |
+
+</div>
 <br>
 <br>
 
-<table>
-<tr>
-<td><img src="https://starmometer.com/2022/06/09/bini-named-by-rolling-stone-as-one-of-spotify-radars-rising-global-artists/" alt="Malata, John Rei R." width="200"/><br>*Malata, John Rei R.*</td>
-<td><img src="https://starmometer.com/2022/06/09/bini-named-by-rolling-stone-as-one-of-spotify-radars-rising-global-artists/" alt="Umali, Ariane Mae D." width="200"/><br>*Umali, Ariane Mae D.*</td>
-</tr>
-</table>
+
 
 
 
