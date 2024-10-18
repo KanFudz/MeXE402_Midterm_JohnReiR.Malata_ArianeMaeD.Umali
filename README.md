@@ -19,7 +19,7 @@
       - [Interpretation](#interpretation)
   - [VI. Documentation](#vi-documentation)
   - [VII. Refererences](#vii-references)
-  - [VIII. Group Members](#vii-group-members)
+  - [VIII. Group Members](#viii-group-members)
 <hr> 
 <br>
 
