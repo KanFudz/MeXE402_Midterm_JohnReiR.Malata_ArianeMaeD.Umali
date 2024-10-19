@@ -3,28 +3,29 @@
 <br>
 
 ## Table of Contents
-  - [I. Introduction](#i-introduction)
-  - [II. Dataset Description](#ii-dataset-description)
-  - [III. Project Objectives](#iii-project-objectives)
-  - [IV. Linear Regression Analysis](#iv-linear-regression-analysis)
+  - [I. Abstarct](#i-abstract)
+  - [II. Introduction](#ii-introduction)
+  - [III. Dataset Description](#iii-dataset-description)
+  - [IV. Project Objectives](#iv-project-objectives)
+  - [V. Linear Regression Analysis](#v-linear-regression-analysis)
       - [Data Preprocessing](#data-preprocessing)
       - [Model Implementation](#model-implementation)
       - [Evaluation Metrics](#evaluation-metrics)
       - [Interpretation](#interpretation)
-  - [V. Logistic Regeression Analysis](#v-logistic-regression-analysis)
+  - [VI. Logistic Regeression Analysis](#vi-logistic-regression-analysis)
       - [Data Preprocessing](#data-preprocessing)
       - [Model Implementation](#model-implementation)
       - [Evaluation Metrics](#evaluation-metrics)
       - [Visualization](#visualization)
       - [Interpretation](#interpretation)
-  - [VI. Documentation](#vi-documentation)
-  - [VII. Refererences](#vii-references)
-  - [VIII. Group Members](#viii-group-members)
+  - [VII. Documentation](#vii-documentation)
+  - [VIII. Refererences](#viii-references)
+  - [IX. Group Members](#ix-group-members)
 <hr> 
 <br>
 
 
-## I. Introduction
+## I. Abstract
 <p align="justify"> 
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Overview of Linear and Logistic Regression.
   </p>
@@ -32,7 +33,7 @@
 <br>
 
 
-## II. Dataset Description
+## II. Introduction
 <p align="justify"> 
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Details about the datasets used.
   </p>
@@ -40,7 +41,7 @@
 <br>
 
 
-## III. Project Objectives
+## III. Dataset Description
 <p align="justify"> 
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What you aim to achieve with your analyses.
   </p>
@@ -48,7 +49,15 @@
 <br>
 
 
-## IV. Linear Regression Analysis
+## IV. Project Objectives
+<p align="justify"> 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Perform Linear Regression using the selected continuous dependent variable
+  </p>
+<br>
+<br>
+
+
+## V. Linear Regression Analysis
 <p align="justify"> 
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Perform Linear Regression using the selected continuous dependent variable
   </p>
@@ -86,7 +95,7 @@
 
 
 
-## V. Logistic Regression Analysis
+## VI. Logistic Regression Analysis
 <p align="justify"> 
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Text]
   </p>
@@ -130,7 +139,7 @@
 
 
 
-## VI. Documentation
+## VII. Documentation
 <p align="justify"> 
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Text]
   </p>
@@ -138,7 +147,7 @@
 <br>
 
 
-## VII. References
+## VIII. References
 <p align="justify"> 
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Text]
   </p>
@@ -146,7 +155,7 @@
 <br>
 
 
-## VIII. Group Members
+## IX. Group Members
 
 <div align="center">
   
