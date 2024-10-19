@@ -159,7 +159,8 @@
 
 <div align="center">
   
-|  <img src=https://github.com/yannaaa23/Testing/blob/49510d6b3798f3f40648deb0f4c8a903a48d1fc4/hello/IMG_20230605_215028_860.jpg alt=Malata style="height: 230px; float: left;">  | <img src=https://github.com/yannaaa23/Testing/blob/49510d6b3798f3f40648deb0f4c8a903a48d1fc4/hello/IMG_20230605_215028_860.jpg alt=Umali style="height: 230px; float: left;"> |
+|  
+<img src= [Malata_John Rei](https://github.com/user-attachments/assets/899628e0-71c4-4bd7-94fc-e37b9a867807) alt=Malata style="height: 230px; float: left;">  | <img src=https://github.com/yannaaa23/Testing/blob/49510d6b3798f3f40648deb0f4c8a903a48d1fc4/hello/IMG_20230605_215028_860.jpg alt=Umali style="height: 230px; float: left;"> |
 |         :---: |     :-----:      |
 | **Malata, John Rei R.** | **Umali, Ariane Mae D.** |
 
