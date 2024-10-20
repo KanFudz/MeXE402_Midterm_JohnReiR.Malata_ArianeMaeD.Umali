@@ -108,8 +108,6 @@ Where:
 
 ### **1. Bike Sharing Dataset**
 
-<img align="left" src="https://th.bing.com/th/id/OIP.WAr6BRiHVI6Zo5bbzDjisgAAAA?rs=1&pid=ImgDetMain" style="height: 480px;"></p>
-
 - **Infromation:**
     <p align="justify"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bike sharing systems are modern versions of traditional rentals, automating membership, rental, and returns. Users can rent and return bikes at different locations, with over 500 programs and 500,000 bicycles worldwide. These systems are gaining attention for their role in addressing traffic, environmental, and health concerns. Unlike other transport services, bike sharing records precise data on travel duration, and departure/arrival points, effectively turning the system into a virtual sensor network that can help monitor city mobility and detect important events.
     </p>
@@ -123,8 +121,16 @@ Where:
 
 <img align="right" src="https://thumbs.dreamstime.com/b/citibike-bicycle-share-new-york-april-bicycles-citibank-s-program-await-riders-new-york-city-photo-taken-april-40609911.jpg" style="height: 400px;"></p>
 
-- **Attributes:** •	
-
+- **Attributes:**
+  - **`season`**: season (1: spring, 2: summer, 3: fall, 4: winter)
+  - **`yr`**: year (0: 2011, 1:2012)
+  - **`mnth`**: month ( 1 to 12)
+  - **`holiday`**: Whether the day is a holiday or not.
+  - **`workingday`**: If day is neither weekend nor holiday is 1, otherwise is 0.
+  - **`temp`**: Normalized temperature in Celcius.
+  - **`hum`**: Normalized humidity. The values are divided to 100 (max)
+  - **`windspeed`**: Normalized wind speed. The values are divided to 67 (max)
+  - **`cnt`**: Count of total rental bikes including both casual and registered
 
   <br>
 
