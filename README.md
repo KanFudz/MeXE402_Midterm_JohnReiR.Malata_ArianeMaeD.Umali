@@ -33,7 +33,7 @@
     </td>
     <td width="50%">
       <div align="justify">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This midterm exam aims to showcase our understanding of Linear and Logistic Regression through hands-on analysis of the Bike Sharing Dataset and Bank Note Authentication UCI data. Over a series of structured activities, we will explore the assigned topics, perform analyses, and document our findings. The first day focuses on dataset exploration and selection of appropriate dependent variables. Subsequent days involve setting up a GitHub repository to document methodologies, performing regression analyses, and interpreting results. Finally, we will refine our repository and present our insights, enhancing our practical skills in statistical analysis and data interpretation.
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This Pair-based project aims to showcase our understanding of Linear and Logistic Regression through hands-on analysis of the Bike Sharing Dataset and Bank Note Authentication UCI data. The practical dataset exploration and selection of appropriate dependent variables are performed in the face-to-face setup. This repository documents the methodologies, performance of regression analyses, and interpretation of results.
       </div>
     </td>
     <td width="25%">
