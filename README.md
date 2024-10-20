@@ -33,7 +33,7 @@
     </td>
     <td width="50%">
       <div align="justify">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This Pair-based project aims to showcase our understanding of Linear and Logistic Regression through hands-on analysis of the Bike Sharing Dataset and Bank Note Authentication UCI data. The practical dataset exploration and selection of appropriate dependent variables are performed in the face-to-face setup. This repository documents the methodologies, performance of regression analyses, and interpretation of results.
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This Pair-Based Project aims to showcase our understanding of Linear and Logistic Regression through hands-on analysis of the Bike Sharing Dataset and Bank Note Authentication UCI data. The practical dataset exploration and selection of appropriate dependent variables are performed in the face-to-face setup. This repository documents the methodologies, performance of regression analyses, and interpretation of results.
       </div>
     </td>
     <td width="25%">
