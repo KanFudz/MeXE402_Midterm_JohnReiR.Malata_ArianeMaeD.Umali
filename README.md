@@ -54,6 +54,7 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; These two models are essential tools in data science for predicting and classifying outcomes based on input variables.
 
+<br>
 
 ## Overview of Linear Regression
 
@@ -108,20 +109,19 @@ Where:
 
 ### **1. Bike Sharing Dataset**
 
+<img align="right" src="https://thumbs.dreamstime.com/b/citibike-bicycle-share-new-york-april-bicycles-citibank-s-program-await-riders-new-york-city-photo-taken-april-40609911.jpg" style="height: 380px;"></p>
+
 - **Infromation:**
     <p align="justify"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bike sharing systems are modern versions of traditional rentals, automating membership, rental, and returns. Users can rent and return bikes at different locations, with over 500 programs and 500,000 bicycles worldwide. These systems are gaining attention for their role in addressing traffic, environmental, and health concerns. Unlike other transport services, bike sharing records precise data on travel duration, and departure/arrival points, effectively turning the system into a virtual sensor network that can help monitor city mobility and detect important events.
     </p>
-  <br>
 
 - **Description:**
   <p align="justify"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This dataset includes data on bike rentals across multiple seasons, with features capturing various environmental and temporal conditions. The dataset comprises several variables such as temperature, humidity, wind speed, season, holiday, working day, and weather situations. Each row represents daily rentals, which are influenced by these factors. The data provides an excellent opportunity to predict the number of rentals based on environmental factors. The main target variable is the number of rentals (count), which we aim to predict using <b>Linear Regression</b>.
     </p>
-  <br>
-  
 
-<img align="right" src="https://thumbs.dreamstime.com/b/citibike-bicycle-share-new-york-april-bicycles-citibank-s-program-await-riders-new-york-city-photo-taken-april-40609911.jpg" style="height: 400px;"></p>
 
 - **Attributes:**
+<img align="right" src="https://jugnoo.io/wp-content/uploads/2021/08/bike.jpg" style="height: 250px;"></p>
   - **`season`**: season (1: spring, 2: summer, 3: fall, 4: winter)
   - **`yr`**: year (0: 2011, 1:2012)
   - **`mnth`**: month ( 1 to 12)
@@ -131,15 +131,40 @@ Where:
   - **`hum`**: Normalized humidity. The values are divided to 100 (max)
   - **`windspeed`**: Normalized wind speed. The values are divided to 67 (max)
   - **`cnt`**: Count of total rental bikes including both casual and registered
+<br>
 
-  <br>
+### **Banknote Authentication Dataset**
 
+<img align="right" src="https://st2.depositphotos.com/1538722/11652/i/450/depositphotos_116526898-stock-photo-euro-paper-banknotes.jpg" style="height: 380px;"></p>
+
+- **Infromation:**
+    <p align="justify"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The Banknote Authentication Dataset is a valuable resource for researchers and data scientists interested in exploring classification techniques for counterfeit detection. With the increasing prevalence of forged currency, the ability to accurately distinguish between authentic and forged banknotes is crucial for financial institutions and security agencies. This dataset provides a unique opportunity to apply machine learning algorithms to a real-world problem, allowing practitioners to develop robust models that can effectively classify banknotes based on various numerical features derived from image analysis.
+    </p>
+
+- **Description:**
+  <p align="justify"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This dataset consists of features extracted from images of banknotes using wavelet transformation. The primary task is to classify the banknotes as <b>authentic</b> or <b>forged</b>. The dataset includes four numerical features: variance of wavelet-transformed image, skewness of wavelet-transformed image, kurtosis of wavelet-transformed image, and entropy of image. These features serve as the independent variables, while the target variable (class) is binary, representing whether the banknote is real or fake. <b>Logistic Regression</b> is used to perform binary classification.
+    </p>
+
+<img align="right" src="https://banknote-solutions.koenig-bauer.com/fileadmin/user_upload/News/Banknote/2022/22-025-L-Coverno-VariCash/KB_BNS_Digital_Solutions_ValiCash_Authenticate-1500x1000px.jpg" style="height: 180px;"></p>
+
+- **Attributes:**
+  - **`variance`**: Variance of wavelet-transformed image.
+  - **`skewness`**: Skewness of wavelet-transformed image.
+  - **`curtosis`**: Kurtosis of wavelet-transformed image.
+  - **`entropy`**: Entropy of the image.
+  - **`class`**: Binary class (0 = forged, 1 = authentic).
+    
+<br>
 
 ## IV. Project Objectives
-<p align="justify"> 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What you aim to achieve with your analyses.
-  </p>
-<br>
+
+The primary objectives of this project are:
+- To develop a **Linear Regression** model to predict daily bike rentals using the **Bike Sharing Dataset**.
+- To implement a **Logistic Regression** model to classify banknotes as authentic or forged using the **Banknote Authentication Dataset**.
+- To document and interpret the results of each model, comparing the effectiveness and limitations of Linear and Logistic Regression.
+- To improve our programming skills in Python, particularly with libraries like Scikit-learn and Pandas, through hands-on experience in building and evaluating machine learning models.
+- To enhance our analytical skills by understanding how to analyze model outputs and make data-driven decisions based on our findings.
+
 <br>
 
 
