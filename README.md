@@ -43,12 +43,67 @@
 </table>
 
 
-## II. Introduction
-<p align="justify"> 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Overview of Linear and Logistic Regression.
-  </p>
-<br>
-<br>
+## Introduction
+
+This project is part of the **MeXE 402 - Mechatronics Engineering Elective 2: Data Science and Machine Learning** course midterm exam. The goal of this project is to apply **Linear Regression** and **Logistic Regression** techniques to analyze real-world datasets, including the **Bike Sharing Dataset** and the **Bank Note Authentication UCI data**. These two models are essential tools in data science for predicting and classifying outcomes based on input variables.
+
+## Overview of Linear Regression
+
+**Linear Regression** is a statistical method used to model the relationship between a dependent variable and one or more independent variables. The goal is to fit a straight line that best represents the relationship between the variables by minimizing the sum of squared differences between the observed values and the predicted values. It's commonly used for prediction and forecasting tasks, such as:
+
+- Predicting sales based on advertising expenditure.
+- Estimating house prices from features like area, number of rooms, etc.
+
+### Linear Regression Equation
+
+The general equation for a linear regression model can be represented as:
+
+$$
+y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + ... + \beta_n x_n + \epsilon
+$$
+
+Where:
+- \(y\) is the dependent variable (e.g., number of bike rentals).
+- \(X_1, X_2, ..., X_n\) are the independent variables.
+- \(\beta_0\) is the intercept.
+- \(\beta_1, \beta_2, ..., \beta_n\) are the coefficients.
+- \(\epsilon\) is the error term.
+
+In this project, we will apply Linear Regression to the **Bike Sharing Dataset** to predict the number of bike rentals based on weather conditions, season, and other factors.
+
+## Overview of Logistic Regression
+
+**Logistic Regression** is used when the dependent variable is binary (e.g., yes/no, true/false, or 0/1). It estimates the probability that a given input belongs to a specific category. The model outputs probabilities, which are then thresholded to classify the input into one of two classes.
+
+### Logistic Regression Equation
+
+For logistic regression, the model predicts the probability of a binary outcome, expressed as:
+
+$$
+P(Y=1 | X) = \frac{1}{1 + e^{-(\beta_0 + \beta_1 x_1 + \beta_2 x_2 + ... + \beta_n x_n)}}
+$$
+
+Where:
+- \(P(Y=1 | X)\) is the probability that the dependent variable \(Y\) equals 1 given the independent variables \(X\).
+- \(e\) is the base of the natural logarithm.
+- \(\beta_0, \beta_1, \beta_2, ..., \beta_n\) are the model coefficients.
+
+## Project Structure
+
+- **Day 1**: Dataset exploration and variable selection.
+- **Day 2-4**: Performing regression analyses (Linear and Logistic).
+- **Day 5**: Refining the GitHub repository, documenting the methodology, and preparing for the final presentation.
+
+## Datasets
+
+1. **Bike Sharing Dataset**: Contains daily and hourly data on bike rentals in Washington, D.C. The data includes weather conditions, season, and rental counts.
+2. **Bank Note Authentication UCI Dataset**: Features of banknotes such as variance, skewness, and entropy are used to determine whether the note is authentic or counterfeit.
+
+## How to Run
+
+1. Clone the repository: 
+   ```bash
+   git clone https://github.com/your-repo-url.git
 
 
 ## III. Dataset Description
