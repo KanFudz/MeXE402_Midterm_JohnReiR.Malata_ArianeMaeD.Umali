@@ -207,11 +207,14 @@ The primary objectives of this project are:
 
 
 ## VI. Logistic Regression Analysis
-<p align="justify"> 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Text]
-  </p>
-<br>
-<br>
+
+Sample
+```python
+def hello_world():
+    print("Hello, world!")
+```
+
+
 
 ### Data Preprocessing
 <p align="justify"> 
