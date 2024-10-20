@@ -45,7 +45,7 @@
 
 ## II. Introduction
 <p align="justify"> 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Details about the datasets used.
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Overview of Linear and Logistic Regression.
   </p>
 <br>
 <br>
@@ -53,7 +53,7 @@
 
 ## III. Dataset Description
 <p align="justify"> 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What you aim to achieve with your analyses.
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Details about the datasets used.
   </p>
 <br>
 <br>
@@ -61,7 +61,7 @@
 
 ## IV. Project Objectives
 <p align="justify"> 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Perform Linear Regression using the selected continuous dependent variable
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; What you aim to achieve with your analyses.
   </p>
 <br>
 <br>
