@@ -27,6 +27,9 @@
 
 ## I. Abstract
 <p align="justify"> 
+  
+![pexels-llucams-2002051](https://github.com/user-attachments/assets/e6c3e5c0-a456-486d-92b8-8e894f92eab2)
+
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Overview of Linear and Logistic Regression.
   </p>
 <br>
