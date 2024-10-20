@@ -58,9 +58,9 @@ This project is part of the **MeXE 402 - Mechatronics Engineering Elective 2: Da
 
 The general equation for a linear regression model can be represented as:
 
-$$
+**$$
 y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + ... + \beta_n x_n + \epsilon
-$$
+$$**
 
 Where:
 - <b>y</b> is the dependent variable (e.g., number of bike rentals).
@@ -79,9 +79,9 @@ In this project, we will apply Linear Regression to the **Bike Sharing Dataset**
 
 For logistic regression, the model predicts the probability of a binary outcome, expressed as:
 
-$$
+**$$
 P(Y=1 | X) = \frac{1}{1 + e^{-(\beta_0 + \beta_1 x_1 + \beta_2 x_2 + ... + \beta_n x_n)}}
-$$
+$$**
 
 Where:
 - <b>P(Y=1 | X)</b> is the probability that the dependent variable <b>Y</b> equals 1 given the independent variables <b>X</b>.
