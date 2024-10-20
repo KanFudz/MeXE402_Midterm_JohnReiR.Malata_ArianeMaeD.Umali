@@ -12,7 +12,7 @@
       - [Model Implementation](#model-implementation)
       - [Evaluation Metrics](#evaluation-metrics)
       - [Interpretation](#interpretation)
-  - [VI. Logistic Regeression Analysis](#vi-logistic-regression-analysis)
+  - [VI. Logistic Regression Analysis](#vi-logistic-regression-analysis)
       - [Data Preprocessing](#data-preprocessing)
       - [Model Implementation](#model-implementation)
       - [Evaluation Metrics](#evaluation-metrics)
@@ -26,15 +26,20 @@
 
 
 ## I. Abstract
-<p align="justify"> 
-  
-![pexels-llucams-2002051](https://github.com/user-attachments/assets/e6c3e5c0-a456-486d-92b8-8e894f92eab2)
-
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Overview of Linear and Logistic Regression.
-  </p>
-<br>
-<br>
-
+<table>
+  <tr>
+    <td width="25%">
+      <img src="https://github.com/user-attachments/assets/e6c3e5c0-a456-486d-92b8-8e894f92eab2" alt="Bike Sharing Dataset" class="img-fluid">
+    </td>
+    <td width="50%">
+      <p>This midterm exam aims to showcase our understanding of Linear and Logistic Regression through hands-on analysis of the Bike Sharing Dataset and Bank Note Authentication UCI data.</p>
+      <p>Over a series of structured activities, we will explore the assigned topics, perform analyses, and document our findings. The first day focuses on dataset exploration and selection of appropriate dependent variables. Subsequent days involve setting up a GitHub repository to document methodologies, performing regression analyses, and interpreting results. Finally, we will refine our repository and present our insights, enhancing our practical skills in statistical analysis and data interpretation.</p>
+    </td>
+    <td width="25%">
+      <img src=![pexels-cottonbro-5920592](https://github.com/user-attachments/assets/86b4a150-33f0-4fe8-b9b9-9c98f047efb7)>
+    </td>
+  </tr>
+</table>
 
 ## II. Introduction
 <p align="justify"> 
