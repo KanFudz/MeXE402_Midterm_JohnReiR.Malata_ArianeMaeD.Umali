@@ -43,7 +43,7 @@
 </table>
 
 
-## Introduction
+## II. Introduction
 
 This project is part of the **MeXE 402 - Mechatronics Engineering Elective 2: Data Science and Machine Learning** course midterm exam. The goal of this project is to apply **Linear Regression** and **Logistic Regression** techniques to analyze real-world datasets, including the **Bike Sharing Dataset** and the **Bank Note Authentication UCI data**. These two models are essential tools in data science for predicting and classifying outcomes based on input variables.
 
@@ -63,11 +63,11 @@ y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + ... + \beta_n x_n + \epsilon
 $$
 
 Where:
-- \(y\) is the dependent variable (e.g., number of bike rentals).
-- \(X_1, X_2, ..., X_n\) are the independent variables.
-- \(\beta_0\) is the intercept.
-- \(\beta_1, \beta_2, ..., \beta_n\) are the coefficients.
-- \(\epsilon\) is the error term.
+- <b>y</b> is the dependent variable (e.g., number of bike rentals).
+- <b>X<sub>1</sub>, X<sub>2</sub>, ..., X<sub>n</sub></b> are the independent variables.
+- <b>&beta;<sub>0</sub></b> is the intercept.
+- <b>&beta;<sub>1</sub>, &beta;<sub>2</sub>, ..., &beta;<sub>n</sub></b> are the coefficients.
+- <b>&epsilon;</b> is the error term.
 
 In this project, we will apply Linear Regression to the **Bike Sharing Dataset** to predict the number of bike rentals based on weather conditions, season, and other factors.
 
@@ -84,26 +84,11 @@ P(Y=1 | X) = \frac{1}{1 + e^{-(\beta_0 + \beta_1 x_1 + \beta_2 x_2 + ... + \beta
 $$
 
 Where:
-- \(P(Y=1 | X)\) is the probability that the dependent variable \(Y\) equals 1 given the independent variables \(X\).
-- \(e\) is the base of the natural logarithm.
-- \(\beta_0, \beta_1, \beta_2, ..., \beta_n\) are the model coefficients.
+- <b>P(Y=1 | X)</b> is the probability that the dependent variable <b>Y</b> equals 1 given the independent variables <b>X</b>.
+- <b>e</b> is the base of the natural logarithm.
+- <b>&beta;<sub>0</sub>, &beta;<sub>1</sub>, &beta;<sub>2</sub>, ..., &beta;<sub>n</sub></b> are the model coefficients.
 
-## Project Structure
-
-- **Day 1**: Dataset exploration and variable selection.
-- **Day 2-4**: Performing regression analyses (Linear and Logistic).
-- **Day 5**: Refining the GitHub repository, documenting the methodology, and preparing for the final presentation.
-
-## Datasets
-
-1. **Bike Sharing Dataset**: Contains daily and hourly data on bike rentals in Washington, D.C. The data includes weather conditions, season, and rental counts.
-2. **Bank Note Authentication UCI Dataset**: Features of banknotes such as variance, skewness, and entropy are used to determine whether the note is authentic or counterfeit.
-
-## How to Run
-
-1. Clone the repository: 
-   ```bash
-   git clone https://github.com/your-repo-url.git
+In this project, we will apply Logistic Regression to the **Bank Note Authentication UCI Dataset** to classify banknotes as either authentic or counterfeit based on their features.
 
 
 ## III. Dataset Description
