@@ -42,21 +42,26 @@
   </tr>
 </table>
 
+<br>
+
 
 ## II. Introduction
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This project is part of the **MeXE 402 - Mechatronics Engineering Elective 2: Data Science and Machine Learning** course midterm exam. The goal of this project is to analyze the real-world datasets **Bike Sharing Dataset** and **Bank Note Authentication UCI data** by applying:
+<p align="justify">  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This project is part of the <b>MeXE 402 - Mechatronics Engineering Elective 2: Data Science and Machine Learning</b> course midterm exam. The goal of this project is to analyze the real-world datasets <b>Bike Sharing Dataset</b> and <b>Bank Note Authentication UCI data</b> by applying: </p>
+
 - **Linear Regression**
 - **Logistic Regression**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; These two models are essential tools in data science for predicting and classifying outcomes based on input variables.
 
+
 ## Overview of Linear Regression
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Linear Regression** is a statistical method used to model the relationship between a dependent variable and one or more independent variables. The goal is to fit a straight line that best represents the relationship between the variables by minimizing the sum of squared differences between the observed values and the predicted values. It's commonly used for prediction and forecasting tasks, such as:
+<p align="justify">  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Linear Regression</b> is a statistical method used to model the relationship between a dependent variable and one or more independent variables. The goal is to fit a straight line that best represents the relationship between the variables by minimizing the sum of squared differences between the observed values and the predicted values. It's commonly used for prediction and forecasting tasks, such as: </p>
 
 - Predicting sales based on advertising expenditure.
 - Estimating house prices from features like area, number of rooms, etc.
+
 
 ### Linear Regression Equation
 
@@ -74,6 +79,8 @@ Where:
 - <b>&epsilon;</b> is the error term.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; In this project, we will apply Linear Regression to the **Bike Sharing Dataset** to predict the number of bike rentals based on weather conditions, season, and other factors.
+
+<br>
 
 ## Overview of Logistic Regression
 
@@ -94,13 +101,32 @@ Where:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; In this project, we will apply Logistic Regression to the **Bank Note Authentication UCI Dataset** to classify banknotes as either authentic or counterfeit based on their features.
 
+<br>
 
-## III. Dataset Description
-<p align="justify"> 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Details about the datasets used.
-  </p>
-<br>
-<br>
+
+## III. Dataset Description 
+
+### **1. Bike Sharing Dataset**
+
+<img align="left" src="https://th.bing.com/th/id/OIP.WAr6BRiHVI6Zo5bbzDjisgAAAA?rs=1&pid=ImgDetMain" style="height: 480px;"></p>
+
+- **Infromation:**
+    <p align="justify"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bike sharing systems are modern versions of traditional rentals, automating membership, rental, and returns. Users can rent and return bikes at different locations, with over 500 programs and 500,000 bicycles worldwide. These systems are gaining attention for their role in addressing traffic, environmental, and health concerns. Unlike other transport services, bike sharing records precise data on travel duration, and departure/arrival points, effectively turning the system into a virtual sensor network that can help monitor city mobility and detect important events.
+    </p>
+  <br>
+
+- **Description:**
+  <p align="justify"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This dataset includes data on bike rentals across multiple seasons, with features capturing various environmental and temporal conditions. The dataset comprises several variables such as temperature, humidity, wind speed, season, holiday, working day, and weather situations. Each row represents daily rentals, which are influenced by these factors. The data provides an excellent opportunity to predict the number of rentals based on environmental factors. The main target variable is the number of rentals (count), which we aim to predict using <b>Linear Regression</b>.
+    </p>
+  <br>
+  
+
+<img align="right" src="https://thumbs.dreamstime.com/b/citibike-bicycle-share-new-york-april-bicycles-citibank-s-program-await-riders-new-york-city-photo-taken-april-40609911.jpg" style="height: 400px;"></p>
+
+- **Attributes:** •	
+
+
+  <br>
 
 
 ## IV. Project Objectives
