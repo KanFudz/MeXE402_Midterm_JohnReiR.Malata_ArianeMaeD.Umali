@@ -3,7 +3,7 @@
 <br>
 
 ## Table of Contents
-  - [I. Abstarct](#i-abstract)
+  - [I. Abstract](#i-abstract)
   - [II. Introduction](#ii-introduction)
   - [III. Dataset Description](#iii-dataset-description)
   - [IV. Project Objectives](#iv-project-objectives)
