@@ -32,14 +32,19 @@
       <img src="https://github.com/user-attachments/assets/e6c3e5c0-a456-486d-92b8-8e894f92eab2" alt="Bike Sharing Dataset" style="width: 100%; height: 300px;">
     </td>
     <td width="50%">
-      <p>This midterm exam aims to showcase our understanding of Linear and Logistic Regression through hands-on analysis of the Bike Sharing Dataset and Bank Note Authentication UCI data.</p>
-      <p>Over a series of structured activities, we will explore the assigned topics, perform analyses, and document our findings. The first day focuses on dataset exploration and selection of appropriate dependent variables. Subsequent days involve setting up a GitHub repository to document methodologies, performing regression analyses, and interpreting results. Finally, we will refine our repository and present our insights, enhancing our practical skills in statistical analysis and data interpretation.</p>
+      <p style="text-align: justify; text-indent: 20px;">
+        This midterm exam aims to showcase our understanding of Linear and Logistic Regression through hands-on analysis of the Bike Sharing Dataset and Bank Note Authentication UCI data.
+      </p>
+      <p style="text-align: justify; text-indent: 20px;">
+        Over a series of structured activities, we will explore the assigned topics, perform analyses, and document our findings. The first day focuses on dataset exploration and selection of appropriate dependent variables. Subsequent days involve setting up a GitHub repository to document methodologies, performing regression analyses, and interpreting results. Finally, we will refine our repository and present our insights, enhancing our practical skills in statistical analysis and data interpretation.
+      </p>
     </td>
     <td width="25%">
       <img src="https://github.com/user-attachments/assets/86b4a150-33f0-4fe8-b9b9-9c98f047efb7" alt="Investigator" style="width: 100%; height: 300px;">
     </td>
   </tr>
 </table>
+
 
 ## II. Introduction
 <p align="justify"> 
