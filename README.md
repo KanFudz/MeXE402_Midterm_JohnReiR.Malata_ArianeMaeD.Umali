@@ -49,14 +49,14 @@
 
 ## Overview of Linear Regression
 
-**Linear Regression** is a statistical method used to model the relationship between a dependent variable and one or more independent variables. The goal is to fit a straight line that best represents the relationship between the variables by minimizing the sum of squared differences between the observed values and the predicted values. It's commonly used for prediction and forecasting tasks, such as:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Linear Regression** is a statistical method used to model the relationship between a dependent variable and one or more independent variables. The goal is to fit a straight line that best represents the relationship between the variables by minimizing the sum of squared differences between the observed values and the predicted values. It's commonly used for prediction and forecasting tasks, such as:
 
 - Predicting sales based on advertising expenditure.
 - Estimating house prices from features like area, number of rooms, etc.
 
 ### Linear Regression Equation
 
-The general equation for a linear regression model can be represented as:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The general equation for a linear regression model can be represented as:
 
 **$$
 y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + ... + \beta_n x_n + \epsilon
@@ -69,15 +69,15 @@ Where:
 - <b>&beta;<sub>1</sub>, &beta;<sub>2</sub>, ..., &beta;<sub>n</sub></b> are the coefficients.
 - <b>&epsilon;</b> is the error term.
 
-In this project, we will apply Linear Regression to the **Bike Sharing Dataset** to predict the number of bike rentals based on weather conditions, season, and other factors.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; In this project, we will apply Linear Regression to the **Bike Sharing Dataset** to predict the number of bike rentals based on weather conditions, season, and other factors.
 
 ## Overview of Logistic Regression
 
-**Logistic Regression** is used when the dependent variable is binary (e.g., yes/no, true/false, or 0/1). It estimates the probability that a given input belongs to a specific category. The model outputs probabilities, which are then thresholded to classify the input into one of two classes.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Logistic Regression** is used when the dependent variable is binary (e.g., yes/no, true/false, or 0/1). It estimates the probability that a given input belongs to a specific category. The model outputs probabilities, which are then thresholded to classify the input into one of two classes.
 
 ### Logistic Regression Equation
 
-For logistic regression, the model predicts the probability of a binary outcome, expressed as:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; For logistic regression, the model predicts the probability of a binary outcome, expressed as:
 
 **$$
 P(Y=1 | X) = \frac{1}{1 + e^{-(\beta_0 + \beta_1 x_1 + \beta_2 x_2 + ... + \beta_n x_n)}}
@@ -88,7 +88,7 @@ Where:
 - <b>e</b> is the base of the natural logarithm.
 - <b>&beta;<sub>0</sub>, &beta;<sub>1</sub>, &beta;<sub>2</sub>, ..., &beta;<sub>n</sub></b> are the model coefficients.
 
-In this project, we will apply Logistic Regression to the **Bank Note Authentication UCI Dataset** to classify banknotes as either authentic or counterfeit based on their features.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; In this project, we will apply Logistic Regression to the **Bank Note Authentication UCI Dataset** to classify banknotes as either authentic or counterfeit based on their features.
 
 
 ## III. Dataset Description
