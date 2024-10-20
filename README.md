@@ -45,7 +45,7 @@
 
 ## II. Introduction
 
-This project is part of the **MeXE 402 - Mechatronics Engineering Elective 2: Data Science and Machine Learning** course midterm exam. The goal of this project is to apply **Linear Regression** and **Logistic Regression** techniques to analyze real-world datasets, including the **Bike Sharing Dataset** and the **Bank Note Authentication UCI data**. These two models are essential tools in data science for predicting and classifying outcomes based on input variables.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This project is part of the **MeXE 402 - Mechatronics Engineering Elective 2: Data Science and Machine Learning** course midterm exam. The goal of this project is to apply **Linear Regression** and **Logistic Regression** techniques to analyze real-world datasets, including the **Bike Sharing Dataset** and the **Bank Note Authentication UCI data**. These two models are essential tools in data science for predicting and classifying outcomes based on input variables.
 
 ## Overview of Linear Regression
 
