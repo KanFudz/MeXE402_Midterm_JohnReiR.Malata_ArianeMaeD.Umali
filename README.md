@@ -25,6 +25,7 @@
 <br>
 
 
+
 ## I. Abstract
 <table>
   <tr>
@@ -43,6 +44,7 @@
 </table>
 
 <br>
+
 
 
 ## II. Introduction
@@ -105,6 +107,7 @@ Where:
 <br>
 
 
+
 ## III. Dataset Description 
 
 ### **1. Bike Sharing Dataset**
@@ -156,6 +159,8 @@ Where:
     
 <br>
 
+
+
 ## IV. Project Objectives
 
 The primary objectives of this project are:
@@ -166,6 +171,7 @@ The primary objectives of this project are:
 - To enhance our analytical skills by understanding how to analyze model outputs and make data-driven decisions based on our findings.
 
 <br>
+
 
 
 ## V. Linear Regression Analysis
@@ -207,14 +213,6 @@ The primary objectives of this project are:
 
 
 ## VI. Logistic Regression Analysis
-
-Sample
-```python
-def hello_world():
-    print("Hello, world!")
-```
-**`variance`**
-
 
 ### Data Preprocessing
 - **Step 1: Import Necessary Libraries**
@@ -360,7 +358,7 @@ def hello_world():
   ```
 
     <p align="justify">
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This outputs the predicted class for the single data point: </p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This will outputs the predicted class for the single data point: </p>
         
   ```python
   array([1])
@@ -488,23 +486,65 @@ def hello_world():
   <p align="justify">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This will display a visually intuitive heatmap that represents the confusion matrix of predicted vs actual classifications. </p>
 
-
-
-
-
-
-
-
-
-
-
 <br>
+
 
 ### Interpretation
-<p align="justify"> 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Discuss the model's ability to classify and the importance of features.
-  </p>
-<br>
+- **Step 1: Extracting the Coefficients for the Features**
+    <p align="justify">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We use <b><code>model.coef_</code></b> to extract the model's coefficients for each feature. Since this is a binary classification, we only need the first row of coefficients. </p>
+        
+  ```python
+  coefficients = model.coef_[0]  # Only the first row, as it's binary classification
+  features = X_df.columns  # Get feature names from the DataFrame
+  ```
+
+- **Step 2: Creating a DataFrame to Display Feature Importance**
+    <p align="justify">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We combine the extracted coefficients with the feature names to create a DataFrame for better readability and display the feature importance. </p>
+        
+  ```python
+  coef_df = pd.DataFrame({'Feature': features, 'Coefficient': coefficients})
+  print("Feature importance:\n", coef_df)
+  ```
+
+    <p align="justify">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This will display the feature importance: </p>
+        
+  ```python
+  Feature importance:
+      Feature  Coefficient
+  0  variance    -4.690853
+  1  skewness    -4.759805
+  2  curtosis    -4.309521
+  3   entropy     0.139582
+  ```
+
+- **Step 3: Interpreting the Results**
+    <p align="justify">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We print out an interpretation of the results, including model accuracy and what each coefficient represents in terms of the effect on the predicted class. </p>
+        
+  ```python
+  print("\nModel Interpretation:")
+  print("The logistic regression model has an accuracy of {:.2f}% on the test set.".format(accuracy * 100))
+  print("The confusion matrix indicates how many of the actual classes were correctly classified.")
+  print("Each coefficient represents the change in the log odds of the target variable for a one-unit change in the predictor variable.")
+  print("A positive coefficient indicates that as the predictor increases, the likelihood of the target class being 1 (e.g., Authentic) increases.")
+  print("Conversely, a negative coefficient indicates that as the predictor increases, the likelihood of the target class being 0 (e.g., Forged) increases.")
+  ```
+
+    <p align="justify">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This will output the following interpretation: </p>
+        
+  ```python
+  Model Interpretation:
+    The logistic regression model has an accuracy of 98.91% on the test set.
+    The confusion matrix indicates how many of the actual classes were correctly classified.
+    Each coefficient represents the change in the log odds of the target variable for a one-unit change in the predictor variable.
+    A positive coefficient indicates that as the predictor increases, the likelihood of the target class being 1 (e.g., Authentic) increases.
+    Conversely, a negative coefficient indicates that as the predictor increases, the likelihood of the target class being 0 (e.g., Forged) increases.
+  ```
+
 <br>
 
 
