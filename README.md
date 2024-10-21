@@ -12,7 +12,7 @@
       - [Data Preprocessing](#data-preprocessing)
       - [Model Implementation](#model-implementation)
       - [Model Evaluation](#model-evaluation)
-      - [Key Metrics](#key-metrics)
+        - [Key Metrics](#key-metrics)
       - [Results](#results)
       - [Visuals](#visuals)
   - [VI. Logistic Regression Analysis](#vi-logistic-regression-analysis)
@@ -193,7 +193,7 @@ The primary objectives of this project are:
 ### Model Evaluation
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The model is evaluated using R-squared, Mean Squared Error (MSE), and Mean Absolute Error (MAE). These metrics provide insights into how well the model explains the variability in bike rentals and the accuracy of its predictions. The coefficients of the model are interpreted to understand the impact of individual predictors.
 
-### Key Metrics:
+#### Key Metrics:
 - **R-squared:** Indicates the proportion of variance in bike rentals explained by the model.
 - **MSE & MAE:** Measure the average errors in prediction, with lower values indicating better performance.
 
