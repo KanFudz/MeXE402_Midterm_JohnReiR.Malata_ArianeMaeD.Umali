@@ -240,6 +240,9 @@ The primary objectives of this project are:
 - **Confusion Matrix**: Displaying **true** versus **predicted** classifications to identify areas of misclassification.
 - **Heatmaps** to visualize **correlations** between variables.
 
+
+#### Hindi pa to tapos, may aayusin pa me here
+
 </div>
 <br>
 
