@@ -176,14 +176,14 @@ The primary objectives of this project are:
 
 ## V. Linear Regression Analysis
 <p align="justify"> 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Perform Linear Regression using the selected continuous dependent variable
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Linear Regression is performed using the count of bike rentals as the dependent variable
   </p>
 <br>
 <br>
 
 ### Data Preprocessing
 <p align="justify"> 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Handle missing values, outliers, and normalize data if necessary.
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; No missing values were detected in the dataset. However, outliers were present. 
   </p>
 <br>
 <br>
