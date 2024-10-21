@@ -124,7 +124,7 @@ Where:
 
 
 - **Attributes:**
-<img align="right" src="https://jugnoo.io/wp-content/uploads/2021/08/bike.jpg" style="height: 220px;"></p>
+<img align="right" src="https://jugnoo.io/wp-content/uploads/2021/08/bike.jpg" style="height: 200px;"></p>
   - **`season`**: season (1: spring, 2: summer, 3: fall, 4: winter)
   - **`yr`**: year (0: 2011, 1:2012)
   - **`mnth`**: month ( 1 to 12)
@@ -138,7 +138,7 @@ Where:
 
 ### **Banknote Authentication Dataset**
 
-<img align="right" src="https://st2.depositphotos.com/1538722/11652/i/450/depositphotos_116526898-stock-photo-euro-paper-banknotes.jpg" style="height: 380px;"></p>
+<img align="right" src="https://st2.depositphotos.com/1538722/11652/i/450/depositphotos_116526898-stock-photo-euro-paper-banknotes.jpg" style="height: 320px;"></p>
 
 - **Information:**
     <p align="justify"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The Banknote Authentication Dataset is a valuable resource for researchers and data scientists interested in exploring classification techniques for counterfeit detection. With the increasing prevalence of forged currency, the ability to accurately distinguish between authentic and forged banknotes is crucial for financial institutions and security agencies. This dataset provides a unique opportunity to apply machine learning algorithms to a real-world problem, allowing practitioners to develop robust models that can effectively classify banknotes based on various numerical features derived from image analysis.
