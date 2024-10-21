@@ -124,7 +124,7 @@ Where:
 
 
 - **Attributes:**
-<img align="right" src="https://jugnoo.io/wp-content/uploads/2021/08/bike.jpg" style="height: 250px;"></p>
+<img align="right" src="https://jugnoo.io/wp-content/uploads/2021/08/bike.jpg" style="height: 220px;"></p>
   - **`season`**: season (1: spring, 2: summer, 3: fall, 4: winter)
   - **`yr`**: year (0: 2011, 1:2012)
   - **`mnth`**: month ( 1 to 12)
