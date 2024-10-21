@@ -176,34 +176,34 @@ The primary objectives of this project are:
 <br>
 
 
-## V. Linear Regression Analysis - Bike Rental Dataset
+## V. **Linear Regression Analysis** - **Bike Rental Dataset**
 
-### Overview
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The project performs a Linear Regression analysis to predict bike rental counts based on environmental and calendar-based factors. The dataset includes features like temperature, humidity, weather conditions, and more. The analysis covers data exploration, preprocessing, model training, and evaluation.
+### **Overview**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The project performs a **Linear Regression analysis** to **predict bike rental counts** based on **environmental** and **calendar-based factors**. The dataset includes features like **temperature**, **humidity**, **weather conditions**, and more. The analysis covers **data exploration**, **preprocessing**, **model training**, and **evaluation**.
 
-### Exploratory Data Analysis (EDA)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The dataset consists of 731 observations and 16 features. Key variables include temperature, humidity, windspeed, and total bike rental counts. Columns are renamed for clarity, and the dataset is inspected for missing values and data types. Initial data exploration reveals correlations between weather conditions and bike rental counts.
+### **Exploratory Data Analysis (EDA)**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The dataset consists of **731 observations** and **16 features**. Key variables include **temperature**, **humidity**, **windspeed**, and **total bike rental counts**. Columns are **renamed for clarity**, and the dataset is inspected for **missing values** and **data types**. Initial data exploration reveals **correlations** between **weather conditions** and **bike rental counts**.
 
-### Data Preprocessing
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Missing values are handled using K-Nearest Neighbors (KNN) imputation, ensuring data consistency. Outliers and extreme values are checked to prevent skewing the model results. Continuous features are normalized to improve model performance. Features are split into training and test sets to evaluate the model's generalizability.
+### **Data Preprocessing**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Missing values** are handled using **K-Nearest Neighbors (KNN) imputation**, ensuring **data consistency**. **Outliers** and **extreme values** are checked to prevent **skewing the model results**. Continuous features are **normalized** to improve **model performance**. Features are split into **training** and **test sets** to evaluate the model's **generalizability**.
 
-### Model Implementation
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A Linear Regression model is applied using the `Scikit-learn` library. The model uses features such as temperature, humidity, and windspeed to predict total bike rentals. The training process involves fitting the model to the dataset and evaluating its predictive power.
+### **Model Implementation**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A **Linear Regression model** is applied using the **`Scikit-learn` library**. The model uses features such as **temperature**, **humidity**, and **windspeed** to predict **total bike rentals**. The training process involves **fitting the model** to the dataset and evaluating its **predictive power**.
 
-### Model Evaluation
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The model is evaluated using R-squared, Mean Squared Error (MSE), and Mean Absolute Error (MAE). These metrics provide insights into how well the model explains the variability in bike rentals and the accuracy of its predictions. The coefficients of the model are interpreted to understand the impact of individual predictors.
+### **Model Evaluation**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The model is evaluated using **R-squared**, **Mean Squared Error (MSE)**, and **Mean Absolute Error (MAE)**. These metrics provide insights into how well the model explains the **variability** in bike rentals and the **accuracy** of its predictions. The **coefficients** of the model are interpreted to understand the **impact of individual predictors**.
 
-### Key Metrics:
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **R-squared:** Indicates the proportion of variance in bike rentals explained by the model. <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **MSE & MAE:** Measure the average errors in prediction, with lower values indicating better performance.
+### **Key Metrics:**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **R-squared:** Indicates the proportion of **variance** in bike rentals explained by the model. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **MSE & MAE:** Measure the **average errors** in prediction, with lower values indicating **better performance**.
 
-### Results
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The analysis shows a significant relationship between temperature and bike rentals, with a positive coefficient suggesting higher rentals during warmer conditions. Humidity and windspeed also contribute to predicting bike rentals, although to a lesser extent.
+### **Results**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The analysis shows a **significant relationship** between **temperature** and **bike rentals**, with a **positive coefficient** suggesting **higher rentals** during **warmer conditions**. **Humidity** and **windspeed** also contribute to predicting bike rentals, although to a **lesser extent**.
 
-### Visuals:
-- Distribution plots of key predictors and the target variable (`total_count`).
-- Heatmaps to visualize correlations between variables.
-- Residual plots to assess model assumptions like linearity and homoscedasticity.
+### **Visuals:**
+- **Distribution plots** of key predictors and the target variable (**`total_count`**).
+- **Heatmaps** to visualize **correlations** between variables.
+- **Residual plots** to assess model assumptions like **linearity** and **homoscedasticity**.
 
 
 
