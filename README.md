@@ -7,7 +7,7 @@
   - [II. Introduction](#ii-introduction)
   - [III. Dataset Description](#iii-dataset-description)
   - [IV. Project Objectives](#iv-project-objectives)
-  - [V. Linear Regression Analysis](#v-linear-regression-analysis)
+  - [V. Linear Regression Analysis](#v Linear Regression Analysis - Bike Rental Dataset)
       - [Data Preprocessing](#data-preprocessing)
       - [Model Implementation](#model-implementation)
       - [Evaluation Metrics](#evaluation-metrics)
