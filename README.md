@@ -32,7 +32,7 @@
 <table>
   <tr>
     <td width="25%">
-      <img src="https://github.com/user-attachments/assets/e6c3e5c0-a456-486d-92b8-8e894f92eab2" alt="Bike Sharing Dataset" style="width: 100%; height: 400px;">
+      <img src="https://github.com/user-attachments/assets/e6c3e5c0-a456-486d-92b8-8e894f92eab2" alt="Bike Sharing Dataset" style="width: 100%; height: 450px;">
     </td>
     <td width="50%">
       <div align="justify">
@@ -42,13 +42,12 @@
       </div>
     </td>
     <td width="25%">
-      <img src="https://github.com/user-attachments/assets/86b4a150-33f0-4fe8-b9b9-9c98f047efb7" alt="Investigator" style="width: 100%; height: 400px;">
+      <img src="https://github.com/user-attachments/assets/86b4a150-33f0-4fe8-b9b9-9c98f047efb7" alt="Investigator" style="width: 100%; height: 450px;">
     </td>
   </tr>
 </table>
 
 <br>
-
 
 
 ## II. Introduction
@@ -59,7 +58,6 @@
 - **Logistic Regression**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; These two models are essential tools in data science for predicting and classifying outcomes based on input variables.
-
 <br>
 
 ## Overview of Linear Regression
