@@ -28,7 +28,6 @@
 <br>
 
 
-
 ## I. **Abstract**
 <table>
   <tr>
@@ -50,7 +49,9 @@
 
 ## II. **Introduction**
 
-<p align="justify">  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This project is part of the **MeXE 402 - Mechatronics Engineering Elective 2: Data Science and Machine Learning** course midterm exam. The goal of this project is to analyze the real-world datasets **Bike Sharing Dataset** and **Bank Note Authentication UCI data** by applying: </p>
+<p align="justify">  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This project is part of the **MeXE 402 - Mechatronics Engineering Elective 2: Data Science and Machine Learning** course midterm exam. The goal of this project is to analyze the real-world datasets **Bike Sharing Dataset** and **Bank Note Authentication UCI data** by applying: 
+</p>
 
 - **Linear Regression**
 - **Logistic Regression**
@@ -61,7 +62,9 @@
 
 ## **Overview of Linear Regression**
 
-<p align="justify">  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Linear Regression** is a statistical method used to model the relationship between a **dependent variable** and one or more **independent variables**. The goal is to fit a straight line that best represents the relationship between the variables by minimizing the **sum of squared differences** between the observed values and the predicted values. It's commonly used for **prediction** and **forecasting tasks**, such as: </p>
+<p align="justify">  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Linear Regression** is a statistical method used to model the relationship between a **dependent variable** and one or more **independent variables**. The goal is to fit a straight line that best represents the relationship between the variables by minimizing the **sum of squared differences** between the observed values and the predicted values. It's commonly used for **prediction** and **forecasting tasks**, such as: 
+</p>
 
 - Predicting **sales** based on **advertising expenditure**.
 - Estimating **house prices** from features like **area**, **number of rooms**, etc.
