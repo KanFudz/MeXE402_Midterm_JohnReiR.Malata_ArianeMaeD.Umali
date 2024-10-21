@@ -173,42 +173,34 @@ The primary objectives of this project are:
 <br>
 
 
+## V. Linear Regression Analysis - Bike Rental Dataset
 
-## V. Linear Regression Analysis
-<p align="justify"> 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Linear Regression is performed using the count of bike rentals as the dependent variable
-  </p>
-<br>
-<br>
+### Overview
+The project performs a Linear Regression analysis to predict bike rental counts based on environmental and calendar-based factors. The dataset includes features like temperature, humidity, weather conditions, and more. The analysis covers data exploration, preprocessing, model training, and evaluation.
+
+### Exploratory Data Analysis (EDA)
+The dataset consists of 731 observations and 16 features. Key variables include temperature, humidity, windspeed, and total bike rental counts. Columns are renamed for clarity, and the dataset is inspected for missing values and data types. Initial data exploration reveals correlations between weather conditions and bike rental counts.
 
 ### Data Preprocessing
-<p align="justify"> 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; No missing values were detected in the dataset. However, outliers were present. 
-  </p>
-<br>
-<br>
+Missing values are handled using K-Nearest Neighbors (KNN) imputation, ensuring data consistency. Outliers and extreme values are checked to prevent skewing the model results. Continuous features are normalized to improve model performance. Features are split into training and test sets to evaluate the model's generalizability.
 
 ### Model Implementation
-<p align="justify"> 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Use appropriate libraries (e.g., Scikit-learn in Python).
-  </p>
-<br>
-<br>
+A Linear Regression model is applied using the `Scikit-learn` library. The model uses features such as temperature, humidity, and windspeed to predict total bike rentals. The training process involves fitting the model to the dataset and evaluating its predictive power.
 
-### Evaluation Metrics
-<p align="justify"> 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Calculate R-squared, Mean Squared Error, etc.
-  </p>
-<br>
-<br>
+### Model Evaluation
+The model is evaluated using R-squared, Mean Squared Error (MSE), and Mean Absolute Error (MAE). These metrics provide insights into how well the model explains the variability in bike rentals and the accuracy of its predictions. The coefficients of the model are interpreted to understand the impact of individual predictors.
 
+### Key Metrics:
+- **R-squared:** Indicates the proportion of variance in bike rentals explained by the model.
+- **MSE & MAE:** Measure the average errors in prediction, with lower values indicating better performance.
 
-### Interpretation
-<p align="justify"> 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Explain the significance of coefficients and the model's predictive power.
-  </p>
-<br>
-<br>
+### Results
+The analysis shows a significant relationship between temperature and bike rentals, with a positive coefficient suggesting higher rentals during warmer conditions. Humidity and windspeed also contribute to predicting bike rentals, although to a lesser extent.
+
+### Visuals:
+- Distribution plots of key predictors and the target variable (`total_count`).
+- Heatmaps to visualize correlations between variables.
+- Residual plots to assess model assumptions like linearity and homoscedasticity.
 
 
 
