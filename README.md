@@ -176,7 +176,9 @@ The primary objectives of this project are:
 
 
 ## V. **Linear Regression Analysis** - **Bike Rental Dataset**
+<div align="justify">
 
+  
 ### **Overview**
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The project performs a **Linear Regression analysis** to **predict bike rental counts** based on **environmental** and **calendar-based factors**. The dataset includes features like **temperature**, **humidity**, **weather conditions**, and more. The analysis covers **data exploration**, **preprocessing**, **model training**, and **evaluation**.
 
@@ -204,6 +206,7 @@ The primary objectives of this project are:
 - **Heatmaps** to visualize **correlations** between variables.
 - **Residual plots** to assess model assumptions like **linearity** and **homoscedasticity**.
 
+</div>
 
 
 ## VI. Logistic Regression Analysis
