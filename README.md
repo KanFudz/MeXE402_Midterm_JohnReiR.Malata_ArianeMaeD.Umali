@@ -194,7 +194,7 @@ The primary objectives of this project are:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The model is evaluated using R-squared, Mean Squared Error (MSE), and Mean Absolute Error (MAE). These metrics provide insights into how well the model explains the variability in bike rentals and the accuracy of its predictions. The coefficients of the model are interpreted to understand the impact of individual predictors.
 
 ### Key Metrics:
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **R-squared:** Indicates the proportion of variance in bike rentals explained by the model.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **R-squared:** Indicates the proportion of variance in bike rentals explained by the model. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- **MSE & MAE:** Measure the average errors in prediction, with lower values indicating better performance.
 
 ### Results
