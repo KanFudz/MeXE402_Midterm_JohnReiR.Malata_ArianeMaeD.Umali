@@ -15,12 +15,14 @@
         - [Key Metrics](#key-metrics)
       - [Results](#results)
       - [Visuals](#visuals)
-  - [VI. Logistic Regression Analysis](#vi-logistic-regression-analysis)
+  - [VI. Logistic Regression Analysis](#vi-logistic-regression-analysis---banknote-authentication-dataset)
+      - [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
       - [Data Preprocessing](#data-preprocessing)
       - [Model Implementation](#model-implementation)
-      - [Evaluation Metrics](#evaluation-metrics)
-      - [Visualization](#visualization)
-      - [Interpretation](#interpretation)
+      - [Model Evaluation](#model-evaluation)
+        - [Key Metrics](#key-metrics)
+      - [Results](#results)
+      - [Visuals](#visuals)
   - [VII. Documentation](#vii-documentation)
   - [VIII. Refererences](#viii-references)
   - [IX. Group Members](#ix-group-members)
@@ -207,6 +209,8 @@ The primary objectives of this project are:
 - **Residual plots** to assess model assumptions like **linearity** and **homoscedasticity**.
 
 </div>
+<br>
+
 
 
 ## VI. **Logistic Regression Analysis** - **Banknote Authentication Dataset**
@@ -236,6 +240,7 @@ The primary objectives of this project are:
 - **Confusion Matrix**: Displaying **true** versus **predicted** classifications to identify areas of misclassification.
 - **Heatmaps** to visualize **correlations** between variables.
 
+</div>
 <br>
 
 
