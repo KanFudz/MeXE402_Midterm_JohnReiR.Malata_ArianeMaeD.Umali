@@ -209,14 +209,34 @@ The primary objectives of this project are:
 </div>
 
 
-## VI. Logistic Regression Analysis
+## VI. **Logistic Regression Analysis** - **Banknote Authentication Dataset**
 
+<div align="justify">
+  
+### **Overview**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The project conducts a **Logistic Regression analysis** to determine the authenticity of banknotes based on various features derived from images of the banknotes. The dataset consists of **1,372 observations** and **5 numerical features**, which include attributes like **variance**, **skewness**, **kurtosis**, and **entropy**. The aim is to classify banknotes as either **authentic** or **forged**, utilizing the relationship between these features and the target variable (authentication status).
+
+### **Exploratory Data Analysis (EDA)**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The dataset is first inspected for its structure, with a focus on understanding the distribution of the features and the balance between the two classes—**authentic** and **forged banknotes**. **Visualizations** such as **histograms** and **box plots** are generated to highlight the differences in feature distributions. Additionally, correlation matrices are examined to identify any relationships among features, which helps to inform subsequent steps in data preprocessing and model selection.
+
+### **Data Preprocessing**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; In preparing the data for analysis, the first step is to address any missing values, though the dataset is relatively clean with minimal issues. The features undergo normalization to ensure they are on a similar scale, which is crucial for Logistic Regression. The data is then split into **training** and **testing sets** to evaluate the **model's performance accurately**. Careful consideration is given to maintaining a balanced representation of both classes in the training set to avoid bias in the model's learning.
+
+### **Model Implementation**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Using the **Scikit-learn** library, a **Logistic Regression model** is implemented to predict the probability of a banknote being **authentic** based on the selected features. The model is trained using the training dataset, where the algorithm learns to identify patterns that differentiate authentic banknotes from forgeries. During this process, the logistic function is utilized to **map the input features** to a **probability output** between **0** and **1**.
+
+### **Model Evaluation**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The performance of the **Logistic Regression model** is assessed using **accuracy**. **Accuracy** indicates the overall correctness of the model's predictions.
+
+### **Results**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The **Logistic Regression analysis** reveals a strong relationship between the **features** and the **authentication status of banknotes**. Specific **features**, such as **variance** and **skewness**, are found to be significant predictors of whether a banknote is **authentic** or **forged**. The model demonstrates a **high accuracy rate**, indicating its effectiveness in distinguishing between the two classes.
+
+### **Visuals:**
+- **ROC Curve**: Illustrating the model's performance at various threshold levels, highlighting the trade-off between **sensitivity** and **specificity**.
+- **Confusion Matrix**: Displaying **true** versus **predicted** classifications to identify areas of misclassification.
+- **Heatmaps** to visualize **correlations** between variables.
 
 <br>
-<br>
-
-
-
 
 
 
