@@ -270,9 +270,10 @@ The primary objectives of this project are:
 
 
 ## VIII. References
-<p align="justify"> 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Text]
-  </p>
+
+https://www.kaggle.com/datasets/lakshmi25npathi/bike-sharing-dataset
+https://www.kaggle.com/datasets/ritesaluja/bank-note-authentication-uci-data
+
 <br>
 <br>
 
