@@ -15,7 +15,15 @@
         - [Key Metrics](#key-metrics)
       - [Results](#results)
       - [Visuals](#visuals)
+      - [Interpretation](#interpretation)
   - [VI. Logistic Regression Analysis](#vi-logistic-regression-analysis---banknote-authentication-dataset)
+      - [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
+      - [Data Preprocessing](#data-preprocessing)
+      - [Model Implementation](#model-implementation)
+      - [Model Evaluation](#model-evaluation)
+        - [Key Metrics](#key-metrics)
+      - [Results](#results)
+      - [Visuals](#visuals)
   - [VII. Documentation](#vii-documentation)
   - [VIII. Refererences](#viii-references)
   - [IX. Group Members](#ix-group-members)
@@ -208,7 +216,50 @@ The primary objectives of this project are:
 
 ## VI. **Logistic Regression Analysis** - **Banknote Authentication Dataset**
 
+<div align="justify">
+  
+### **Overview**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This project applies **Logistic Regression** to classify **banknotes** as either **authentic** or **forged**, based on several statistical features derived from wavelet-transformed images of the banknotes. The dataset contains attributes such as **variance**, **skewness**, **curtosis**, and **entropy**. These features provide detailed information about the physical characteristics of each banknote, which the model uses to predict its authenticity. The project covers **data exploration**, **preprocessing steps**, **model training**, **evaluation**, and **interpretation**, culminating in a thorough analysis of the factors contributing to the model's classification ability.
+
+### **Exploratory Data Analysis (EDA)**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The dataset consists of **1372 observations** and **5 key features**: **variance**, **skewness**, **curtosis**, **entropy**, and the target variable, **class**. Initial EDA is performed to understand the structure of the dataset, including checking for missing values and assessing the data types of each feature. The features are analyzed individually to observe their distribution, which is visualized using **histograms**. These plots reveal the spread and skewness of the data, showing how certain features, like variance, tend to have higher dispersion compared to others. **Outliers** are identified using **boxplots**, especially for features like skewness and curtosis, where extreme values are common.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The dataset is further explored using **pairplots**, which show the pairwise relationships between the features, color-coded by class. This helps visualize any linear or non-linear relationships between the variables and how they interact across the two classes (authentic vs. forged). A **correlation matrix** is visualized using a **heatmap**, which highlights the relationships between features such as variance and skewness. These insights lay the groundwork for selecting features that will have the most impact on the Logistic Regression model.
+
+### **Data Preprocessing**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Missing values are checked using methods such as **K-Nearest Neighbors (KNN)**, but in this case, all features are fully populated, allowing us to proceed directly with analysis. Before training the model, several preprocessing steps are applied to ensure optimal performance. Outliers are imputed, and the data is scaled using the **StandardScaler** to standardize features like **variance**, **skewness**, **curtosis**, and **entropy**. This scaling process ensures that all features have the same range, preventing any single feature from disproportionately influencing the model. The dataset is then split into a **training set** and a **test set**, allowing the model to learn from one portion of the data while being evaluated on unseen data. This ensures that the model's performance is generalized and not simply overfitting to the training data.
+
+### **Model Implementation**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The **Logistic Regression model** is built using the **Scikit-learn** library, one of the most widely used machine learning frameworks. The model is trained on the four primary features: variance, skewness, curtosis, and entropy, with the target being the class label that distinguishes authentic banknotes from forgeries. The training process involves fitting the model to the training data, allowing it to learn the relationships between the input features and the output class.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Once the model is trained, it is used to make predictions on both the training and test sets. Additionally, the model is tested by predicting the class of a single banknote data point to demonstrate its practical application.
+
+### **Model Evaluation**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The performance of the **Logistic Regression model** is evaluated using several **key metrics**. The **confusion matrix** is generated, which provides detailed information on the number of true positives, true negatives, false positives, and false negatives. This matrix allows us to assess the model's ability to correctly classify **authentic** and **forged banknotes**. **Accuracy**, which is a key metric in binary classification, is calculated to determine the overall success rate of the model. The **coefficients** of the Logistic Regression model are also analyzed to understand how each feature contributes to the final classification. For example, a positive coefficient for variance suggests that as variance increases, the likelihood of the banknote being classified as authentic increases. These insights are valuable for interpreting the model's decision-making process.
+
+### **Key Metrics**
+- **Accuracy**: The overall accuracy of the model, which represents the proportion of correctly classified instances.
+- **Confusion Matrix**: This provides a breakdown of correct and incorrect classifications, helping to identify the model's strengths and areas for improvement.
+- **Model Coefficients**: The coefficients associated with variance, skewness, curtosis, and entropy indicate the importance of these features in predicting whether a banknote is authentic.
+
+### **Results**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The **Logistic Regression model** performs well, achieving **high accuracy** in classifying banknotes as either **authentic** or **forged**. Variance and curtosis emerge as the most significant predictors of banknote authenticity, with entropy having a smaller, but still relevant, impact. The confusion matrix shows that the model is particularly strong in avoiding false positives, ensuring that genuine banknotes are rarely misclassified as forgeries.
+
+### **Visuals:**
+- **Boxplots**: Used to detect and handle outliers.
+- **Histograms**: Display the distribution of each feature.
+- **Pairplots**: Visualize pairwise relationships between features and classes.
+- **Heatmap**: Correlation matrix to show relationships among features.
+- **Confusion Matrix**: Visualizes classification performance.
+- **Bar Plot**: Displays feature importance based on the Logistic Regression model coefficients.
+
+### Interpretation
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The analysis reveals that the Logistic Regression model can accurately distinguish between authentic and forged banknotes. The most important features for classification are variance and curtosis, which align with the physical characteristics of the banknotes. The model's high accuracy and detailed evaluation metrics suggest it is highly effective for this task. By analyzing the model coefficients, we can further understand how specific features contribute to the classification decisions, offering transparency into the model’s decision-making process.
+
+</div>
 <br>
+
+
 
 ## VII. Documentation
 <p align="justify"> 
