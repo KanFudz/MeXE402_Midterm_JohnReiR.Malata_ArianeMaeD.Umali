@@ -271,7 +271,7 @@ The primary objectives of this project are:
 
 ## VIII. References
 
-https://www.kaggle.com/datasets/lakshmi25npathi/bike-sharing-dataset
+https://www.kaggle.com/datasets/lakshmi25npathi/bike-sharing-dataset <br>
 https://www.kaggle.com/datasets/ritesaluja/bank-note-authentication-uci-data
 ### MIDTERMS Instruction link: https://github.com/MikkoDT/MeXE402_Midterm_4102
 
