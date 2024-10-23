@@ -205,6 +205,8 @@ The primary objectives of this project are:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The analysis shows a **significant relationship** between **temperature** and **bike rentals**, with a **positive coefficient** suggesting **higher rentals** during **warmer conditions**. **Humidity** and **windspeed** also contribute to predicting bike rentals, although to a **lesser extent**.
 
 ### **Visuals:**
+- **Bar Plot**: Displays feature importance based on the Logistic Regression model coefficients.
+- **Boxplots**: Used to detect and handle outliers.
 - **Distribution plots** of key predictors and the target variable (**`total_count`**).
 - **Heatmaps** to visualize **correlations** between variables.
 - **Residual plots** to assess model assumptions like **linearity** and **homoscedasticity**.
