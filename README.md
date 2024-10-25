@@ -205,17 +205,14 @@ The primary objectives of this project are:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The analysis shows a **significant relationship** between **temperature** and **bike rentals**, with a **positive coefficient** suggesting **higher rentals** during **warmer conditions**. **Humidity** and **windspeed** also contribute to predicting bike rentals, although to a **lesser extent**.
 
 ### **Visuals:**
-- **Boxplots**: Used to detect and handle outliers.
-  ![image](https://github.com/user-attachments/assets/163f6919-a5f4-4b91-b368-b43b93eca6b0)
-- **Normal Probability plot** - identifies substantive departures from normality and tells about the goodness of fit.
-  ![image](https://github.com/user-attachments/assets/282b4d2a-e8f5-41c9-9018-c97547d3406f)
-- **Distribution plots** of key predictors and the target variable (**`total_count`**).
-  ![image](https://github.com/user-attachments/assets/ac4e45d4-664d-4b24-bf6f-f2c7d5ebf3c6)
-- **Heatmaps** to visualize **correlations** between variables.
-  ![image](https://github.com/user-attachments/assets/b3a7eeb3-ad7f-4611-a2f9-722e6af11e5c)
-- **Residual plots** to assess model assumptions like **linearity** and **homoscedasticity**.
-  ![image](https://github.com/user-attachments/assets/99fb8d48-3e6b-4b2b-94f3-9aedbebc4e25)
 
+| Description | Visualization |
+|-------------|---------------|
+| **Boxplots**: Used to detect and handle outliers. | <img src="https://github.com/user-attachments/assets/163f6919-a5f4-4b91-b368-b43b93eca6b0" alt="Boxplots" width="300"/> |
+| **Normal Probability Plot**: Identifies substantive departures from normality and assesses goodness of fit. | <img src="https://github.com/user-attachments/assets/282b4d2a-e8f5-41c9-9018-c97547d3406f" alt="Normal Probability Plot" width="300"/> |
+| **Distribution Plots**: Visualizations of key predictors and the target variable (**`total_count`**). | <img src="https://github.com/user-attachments/assets/ac4e45d4-664d-4b24-bf6f-f2c7d5ebf3c6" alt="Distribution Plots" width="300"/> |
+| **Heatmaps**: Visualizes correlations between variables. | <img src="https://github.com/user-attachments/assets/b3a7eeb3-ad7f-4611-a2f9-722e6af11e5c" alt="Heatmaps" width="300"/> |
+| **Residual Plots**: Assesses model assumptions like linearity and homoscedasticity. | <img src="https://github.com/user-attachments/assets/99fb8d48-3e6b-4b2b-94f3-9aedbebc4e25" alt="Residual Plots" width="300"/> |
 
 </div>
 <br>
