@@ -277,7 +277,7 @@ This section provides visualizations used in the analysis and modeling of the da
 
 ## VII. Documentation
 <p align="justify"> 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Text]
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Discussion: Reflect on the results, compare the two regression methods, and mention any limitations.
   </p>
 <br>
 <br>
