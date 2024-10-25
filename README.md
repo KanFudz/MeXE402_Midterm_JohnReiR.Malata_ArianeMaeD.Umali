@@ -34,17 +34,17 @@
 ## I. Abstract
 <table>
   <tr>
-    <td width="25%">
+    <td width="28%">
       <img src="https://github.com/user-attachments/assets/e6c3e5c0-a456-486d-92b8-8e894f92eab2" alt="Bike Sharing Dataset" style="width: 100%; height: 450px;">
     </td>
-    <td width="50%">
+    <td width="44%">
       <div align="justify">
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This <b>Pair-Based Project</b> showcases our understanding of <b>Linear</b> and <b>Logistic Regression</b> through hands-on analysis of two significant datasets: the <b>Bike Sharing Dataset</b> and the <b>Bank Note Authentication UCI data</b>. By documenting our methodologies, performance evaluations, and interpretations of the regression analyses, we aim to highlight the practical applications of these statistical techniques in real-world scenarios. <br> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The <b>Bike Sharing Dataset</b> provides insights into bike rental patterns, influenced by environmental and temporal factors, allowing us to predict rental counts. In contrast, the <b>Bank Note Authentication Dataset</b> serves as a crucial resource for exploring classification techniques to detect counterfeit currency, enabling us to distinguish between authentic and forged banknotes based on numerical features. <br> <br>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This repository not only reflects our analytical capabilities but also our commitment to applying data-driven methodologies in solving practical problems.
       </div>
     </td>
-    <td width="25%">
+    <td width="28%">
       <img src="https://github.com/user-attachments/assets/86b4a150-33f0-4fe8-b9b9-9c98f047efb7" alt="Investigator" style="width: 100%; height: 450px;">
     </td>
   </tr>
