@@ -208,11 +208,13 @@ The primary objectives of this project are:
 
 | Description | Visualization |
 |-------------|---------------|
-| **Boxplots**: Used to detect and handle outliers. | <img src="https://github.com/user-attachments/assets/163f6919-a5f4-4b91-b368-b43b93eca6b0" alt="Boxplots" width="300"/> |
-| **Normal Probability Plot**: Identifies substantive departures from normality and assesses goodness of fit. | <img src="https://github.com/user-attachments/assets/282b4d2a-e8f5-41c9-9018-c97547d3406f" alt="Normal Probability Plot" width="300"/> |
-| **Distribution Plots**: Visualizations of key predictors and the target variable (**`total_count`**). | <img src="https://github.com/user-attachments/assets/ac4e45d4-664d-4b24-bf6f-f2c7d5ebf3c6" alt="Distribution Plots" width="300"/> |
-| **Heatmaps**: Visualizes correlations between variables. | <img src="https://github.com/user-attachments/assets/b3a7eeb3-ad7f-4611-a2f9-722e6af11e5c" alt="Heatmaps" width="300"/> |
-| **Residual Plots**: Assesses model assumptions like linearity and homoscedasticity. | <img src="https://github.com/user-attachments/assets/99fb8d48-3e6b-4b2b-94f3-9aedbebc4e25" alt="Residual Plots" width="300"/> |
+| **Boxplots**: Used to detect and handle outliers. | <img src="https://github.com/user-attachments/assets/163f6919-a5f4-4b91-b368-b43b93eca6b0" alt="Boxplots" width="400"/> |
+| **Normal Probability Plot**: Identifies substantive departures from normality and assesses goodness of fit. | <img src="https://github.com/user-attachments/assets/282b4d2a-e8f5-41c9-9018-c97547d3406f" alt="Normal Probability Plot" width="400"/> |
+| **Distribution Plots**: Visualizations of key predictors and the target variable (**`total_count`**). | <img src="https://github.com/user-attachments/assets/ac4e45d4-664d-4b24-bf6f-f2c7d5ebf3c6" alt="Distribution Plots" width="400"/> |
+| **Heatmaps**: Visualizes correlations between variables. | <img src="https://github.com/user-attachments/assets/b3a7eeb3-ad7f-4611-a2f9-722e6af11e5c" alt="Heatmaps" width="400"/> |
+| **Pair Plots**: Used for visualizing relationships among multiple predictors and their relationship with the target variable. | <img src="https://github.com/user-attachments/assets/6fe489b9-afbe-4ad6-9a76-aa92f12ee567" alt="Pair Plots" width="400"/> |
+| **Residual Plots**: Assesses model assumptions like linearity and homoscedasticity. | <img src="https://github.com/user-attachments/assets/99fb8d48-3e6b-4b2b-94f3-9aedbebc4e25" alt="Residual Plots" width="400"/> |
+
 
 </div>
 <br>
