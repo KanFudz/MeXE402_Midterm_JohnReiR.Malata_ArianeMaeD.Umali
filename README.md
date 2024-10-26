@@ -259,13 +259,24 @@ This section provides visualizations used in the analysis and modeling of the da
 ### **Results**
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The **Logistic Regression model** performs well, achieving **high accuracy** in classifying banknotes as either **authentic** or **forged**. Variance and curtosis emerge as the most significant predictors of banknote authenticity, with entropy having a smaller, but still relevant, impact. The confusion matrix shows that the model is particularly strong in avoiding false positives, ensuring that genuine banknotes are rarely misclassified as forgeries.
 
+
+
 ### **Visuals:**
-- **Boxplots**: Used to detect and handle outliers.
-- **Histograms**: Display the distribution of each feature.
-- **Pairplots**: Visualize pairwise relationships between features and classes.
-- **Heatmap**: Correlation matrix to show relationships among features.
-- **Confusion Matrix**: Visualizes classification performance.
-- **Bar Plot**: Displays feature importance based on the Logistic Regression model coefficients.
+
+#### Data Visualization Techniques
+
+This section presents visualizations used for analyzing and modeling the dataset.
+
+| Description | Visualization |
+|-------------|---------------|
+| **Boxplots**: Used to detect and handle outliers. | <img src="" alt="Boxplots" width="400"/> |
+| **Histograms**: Display the distribution of each feature. | <img src="" alt="Boxplots" width="400"/> |
+| **Pairplots**: Visualize pairwise relationships between features and classes. | <img src="" alt="Boxplots" width="400"/> |
+| **Heatmap**: Correlation matrix to show relationships among features. | <img src="" alt="Boxplots" width="400"/> |
+| **Confusion Matrix**: Visualizes classification performance. | <img src="" alt="Boxplots" width="400"/> |
+| **Bar Plot**: Displays feature importance based on the Logistic Regression model coefficients. | <img src="" alt="Boxplots" width="400"/> |
+
+
 
 ### Interpretation
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The analysis reveals that the Logistic Regression model can accurately distinguish between authentic and forged banknotes. The most important features for classification are variance and curtosis, which align with the physical characteristics of the banknotes. The model's high accuracy and detailed evaluation metrics suggest it is highly effective for this task. By analyzing the model coefficients, we can further understand how specific features contribute to the classification decisions, offering transparency into the model’s decision-making process.
