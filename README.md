@@ -269,12 +269,13 @@ This section presents visualizations used for analyzing and modeling the dataset
 
 | Description | Visualization |
 |-------------|---------------|
-| **Boxplots**: Used to detect and handle outliers. | <img src="" alt="Boxplots" width="400"/> |
-| **Histograms**: Display the distribution of each feature. | <img src="" alt="Boxplots" width="400"/> |
-| **Pairplots**: Visualize pairwise relationships between features and classes. | <img src="" alt="Boxplots" width="400"/> |
-| **Heatmap**: Correlation matrix to show relationships among features. | <img src="" alt="Boxplots" width="400"/> |
-| **Confusion Matrix**: Visualizes classification performance. | <img src="" alt="Boxplots" width="400"/> |
-| **Bar Plot**: Displays feature importance based on the Logistic Regression model coefficients. | <img src="" alt="Boxplots" width="400"/> |
+| **Boxplots**: Used to detect and handle outliers. | <img src="https://github.com/yannaaa23/CSE-Testing-Feb-19/blob/dd7d2f3a478303311055f65379c38800afd6e6c4/Elec%20Mid/box%20plot.png" alt="Boxplots" width="400"/> |
+| **Pairplots**: Visualize pairwise relationships between features and classes. | <img src="https://github.com/yannaaa23/CSE-Testing-Feb-19/blob/dd7d2f3a478303311055f65379c38800afd6e6c4/Elec%20Mid/pairplot.png" alt="Pairplots" width="400"/> |
+| **Normal Probability Plot**: A graphical tool used to assess whether a dataset follows a normal distribution by plotting the data's quantiles against theoretical quantiles of a normal distribution, ideally forming a straight line if normally distributed. | <img src="https://github.com/yannaaa23/CSE-Testing-Feb-19/blob/dd7d2f3a478303311055f65379c38800afd6e6c4/Elec%20Mid/normal%20prob%20plot.png" alt="Normal Probability Plot" width="400"/> |
+| **Histograms**: Display the distribution of each feature. | <img src="https://github.com/yannaaa23/CSE-Testing-Feb-19/blob/dd7d2f3a478303311055f65379c38800afd6e6c4/Elec%20Mid/histog.png" alt="Histograms" width="400"/> |
+| **Heatmap**: Correlation matrix to show relationships among features. | <img src="https://github.com/yannaaa23/CSE-Testing-Feb-19/blob/dd7d2f3a478303311055f65379c38800afd6e6c4/Elec%20Mid/heatmap.png" alt="Heatmap" width="400"/> |
+| **Bar Plot**: Displays feature importance based on the Logistic Regression model coefficients. | <img src="https://github.com/yannaaa23/CSE-Testing-Feb-19/blob/dd7d2f3a478303311055f65379c38800afd6e6c4/Elec%20Mid/bar%20plot.png" alt="Bar Plot" width="400"/> |
+| **Confusion Matrix**: Visualizes classification performance. | <img src="https://github.com/yannaaa23/CSE-Testing-Feb-19/blob/dd7d2f3a478303311055f65379c38800afd6e6c4/Elec%20Mid/con%20matrix.png" alt="Confusion Matrix" width="400"/> |
 
 
 
