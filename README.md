@@ -213,13 +213,13 @@ This section provides visualizations used in the analysis and modeling of the da
 | Description | Visualization |
 |-------------|---------------|
 | **Boxplots**: Used to detect and handle outliers. | <img src="https://github.com/user-attachments/assets/84177ace-26f5-4d5c-85dc-a7d9ef3f775a" alt="Boxplots" width="400"/> |
-| **Normal Probability Plot**: Identifies substantive departures from normality and assesses goodness of fit. | <img src="https://github.com/user-attachments/assets/403246c3-b1ed-48cb-aa5c-a58916928aa7" alt="Normal Probability Plot" width="400"/> |
-| **Distribution Plots**: Visualizations of key predictors and the target variable (**`total_count`**). | <img src="https://github.com/user-attachments/assets/61d931f3-dc27-4145-b196-cfc37793b052" alt="Distribution Plots" width="400"/> |
-| **Heatmaps**: Visualizes correlations between variables. | <img src="https://github.com/user-attachments/assets/4778def5-84a2-41ea-923b-08f837c93989" alt="Heatmaps" width="400"/> |
-| **Pair Plots**: Used for visualizing relationships among multiple predictors and their relationship with the target variable. | <img src="https://github.com/user-attachments/assets/6fe489b9-afbe-4ad6-9a76-aa92f12ee567" alt="Pair Plots" width="400"/> |
-| **Cross-Validation Prediction Plot**: Shows the finite variance between actual and predicted target values. | <img src="https://github.com/user-attachments/assets/46a9a2c6-cb5e-45ac-9f02-0adfebed9759" alt="Cross-Validation Prediction Plot" width="400"/> |
-| **Residual Plots**: Assesses model assumptions like linearity and homoscedasticity. | <img src="https://github.com/user-attachments/assets/99fb8d48-3e6b-4b2b-94f3-9aedbebc4e25" alt="Residual Plots" width="400"/> |
-| **Scatter Plot**: Shows the relationship between actual and predicted values. | <img src="https://github.com/user-attachments/assets/124fd0b6-d70e-4d05-9f0d-58cb3ee27fb6" alt="Scatter Plot" width="400"/> |
+| **Normal Probability Plot**: Identifies substantive departures from normality and assesses goodness of fit. | <img src="https://github.com/user-attachments/assets/f6d97bb6-a65c-4ba4-9727-792523fbda05" alt="Normal Probability Plot" width="400"/> |
+| **Distribution Plots**: Visualizations of key predictors and the target variable (**`total_count`**). | <img src="https://github.com/user-attachments/assets/647e5b16-d1bd-4b7e-8075-33a641e618ee" alt="Distribution Plots" width="400"/> |
+| **Heatmaps**: Visualizes correlations between variables. | <img src="https://github.com/user-attachments/assets/01f1b913-7d9e-4f4c-9fd5-80782c466af5" alt="Heatmaps" width="400"/> |
+| **Pair Plots**: Used for visualizing relationships among multiple predictors and their relationship with the target variable. | <img src="https://github.com/user-attachments/assets/718a1d23-78bd-404f-bde1-5e29330e1e3e" alt="Pair Plots" width="400"/> |
+| **Cross-Validation Prediction Plot**: Shows the finite variance between actual and predicted target values. | <img src="https://github.com/user-attachments/assets/c32767bd-2285-44dc-9b60-65e6133a5c39" alt="Cross-Validation Prediction Plot" width="400"/> |
+| **Residual Plots**: Assesses model assumptions like linearity and homoscedasticity. | <img src="https://github.com/user-attachments/assets/ff159cf3-e9dd-4916-ab9e-37d3eda73ec5" alt="Residual Plots" width="400"/> |
+| **Scatter Plot**: Shows the relationship between actual and predicted values. | <img src="https://github.com/user-attachments/assets/b90baa8c-9145-4584-b150-18404fae6a38" alt="Scatter Plot" width="400"/> |
 
 
 
