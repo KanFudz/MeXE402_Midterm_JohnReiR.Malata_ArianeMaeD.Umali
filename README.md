@@ -289,7 +289,43 @@ This section presents visualizations used for analyzing and modeling the dataset
 
 ## VII. Documentation
 <p align="justify"> 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Discussion: Reflect on the results, compare the two regression methods, and mention any limitations.
+  
+### Results Reflection
+
+- **Linear Regression**
+  - **R-squared**: 0.832 – Indicates that approximately 83.2% of the variance in the total count of bike rentals is explained by the model.
+  - **Root Mean Square Error (RMSE)**: 953.95 – Average deviation of the model’s predictions from the actual values, emphasizing the model's precision in predicting total counts.
+  - **Mean Absolute Error (MAE)**: 677.24 – Mean absolute deviation, highlighting how close predictions are to observed values on average.
+  - **Prediction Example**: Predicted total count of bike rentals = 5904.62 vs. actual count = 6118, demonstrating a slight underprediction.
+  - **Model Coefficients**: Reflects the contribution of each feature, with some features positively or negatively impacting predictions.
+  
+- **Logistic Regression**
+  - **Accuracy**: 96.73% – High accuracy for classifying banknotes as forged or authentic, indicating strong model performance on the test set.
+  - **Confusion Matrix**:
+    - True Positives: 163 – Correctly identified forged banknotes.
+    - True Negatives: 103 – Correctly identified authentic banknotes.
+    - False Positives: 8 – Authentic banknotes misclassified as forged.
+    - False Negatives: 1 – Forged banknotes misclassified as authentic.
+  - **Model Coefficients**: Variance, skewness, and kurtosis exhibit strong negative influence, making forgery likely when increased; entropy, with a positive coefficient, increases likelihood of authenticity.
+
+### Comparison of Regression Methods
+
+- **Performance Metrics**:
+  - Linear Regression is effective for predicting continuous values, providing insights into how feature variation affects rental counts. Logistic Regression, with high accuracy for categorical prediction, correctly classified most banknotes due to its effective separation of binary classes.
+- **Interpretability**:
+  - Linear Regression provides interpretable coefficients for continuous predictions, while Logistic Regression’s coefficients impact the probability of each class, allowing insight into each feature’s influence on classification.
+- **Model Strengths and Weaknesses**:
+  - Linear Regression effectively predicts continuous outcomes but struggles in binary classification. Logistic Regression’s design makes it ideal for binary classification but limited in scenarios needing continuous prediction.
+
+### Limitations
+
+- **Data Assumptions**:
+  - Linear Regression assumes linearity and homoscedasticity, which may not fully capture real-world relationships in bike rentals. Logistic Regression assumes a binary target, making it unsuitable for non-binary outcomes.
+- **Overfitting and Underfitting**:
+  - Logistic Regression might slightly overfit if too finely tuned, while Linear Regression may underfit if relationships between features and target variable deviate from linearity.
+- **Dataset Limitations**:
+  - Limited feature sets in both datasets may omit influential factors (e.g., additional environmental conditions or unknown banknote characteristics), potentially impacting model performance and accuracy.
+
   </p>
 <br>
 <br>
