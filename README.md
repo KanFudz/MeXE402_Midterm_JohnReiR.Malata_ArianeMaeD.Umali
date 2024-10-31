@@ -54,26 +54,24 @@
 
 
 ## II. Introduction
+- This project is part of the <b>MeXE 402 - Mechatronics Engineering Elective 2: Data Science and Machine Learning</b> course midterm exam.
+- The goal of this project is to analyze the real-world datasets <b>Bike Sharing Dataset</b> and <b>Bank Note Authentication UCI data</b> by applying:
+  - **Linear Regression**
+  - **Logistic Regression**
+- These two models are essential tools in data science for predicting and classifying outcomes based on input variables.
 
-<p align="justify">  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This project is part of the <b>MeXE 402 - Mechatronics Engineering Elective 2: Data Science and Machine Learning</b> course midterm exam. The goal of this project is to analyze the real-world datasets <b>Bike Sharing Dataset</b> and <b>Bank Note Authentication UCI data</b> by applying: </p>
-
-- **Linear Regression**
-- **Logistic Regression**
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; These two models are essential tools in data science for predicting and classifying outcomes based on input variables.
 <br>
 
 ## Overview of Linear Regression
-
-<p align="justify">  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Linear Regression</b> is a statistical method used to model the relationship between a dependent variable and one or more independent variables. The goal is to fit a straight line that best represents the relationship between the variables by minimizing the sum of squared differences between the observed values and the predicted values. It's commonly used for prediction and forecasting tasks, such as: </p>
-
-- Predicting sales based on advertising expenditure.
-- Estimating house prices from features like area, number of rooms, etc.
+  - <b>Linear Regression</b> is a statistical method used to model the relationship between a dependent variable and one or more independent variables.
+  - The goal is to fit a straight line that best represents the relationship between the variables by minimizing the sum of squared differences between the observed values and the predicted values.
+  - It's commonly used for prediction and forecasting tasks, such as: </p>
+    - Predicting sales based on advertising expenditure.
+    - Estimating house prices from features like area, number of rooms, etc.
 
 
 ### Linear Regression Equation
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The general equation for a linear regression model can be represented as:
+  - The general equation for a linear regression model can be represented as:
 
 **$$
 y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + ... + \beta_n x_n + \epsilon
@@ -91,12 +89,12 @@ Where:
 <br>
 
 ## Overview of Logistic Regression
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Logistic Regression** is used when the dependent variable is binary (e.g., yes/no, true/false, or 0/1). It estimates the probability that a given input belongs to a specific category. The model outputs probabilities, which are then thresholded to classify the input into one of two classes.
+- **Logistic Regression** is used when the dependent variable is binary (e.g., yes/no, true/false, or 0/1).
+- It estimates the probability that a given input belongs to a specific category.
+- The model outputs probabilities, which are then thresholded to classify the input into one of two classes.
 
 ### Logistic Regression Equation
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; For logistic regression, the model predicts the probability of a binary outcome, expressed as:
+- For logistic regression, the model predicts the probability of a binary outcome, expressed as:
 
 **$$
 P(Y=1 | X) = \frac{1}{1 + e^{-(\beta_0 + \beta_1 x_1 + \beta_2 x_2 + ... + \beta_n x_n)}}
@@ -120,11 +118,16 @@ Where:
 <img align="right" src="https://thumbs.dreamstime.com/b/citibike-bicycle-share-new-york-april-bicycles-citibank-s-program-await-riders-new-york-city-photo-taken-april-40609911.jpg" style="height: 330px;"></p>
 
 - **Information:**
-    <p align="justify"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bike sharing systems are modern versions of traditional rentals, automating membership, rental, and returns. Users can rent and return bikes at different locations, with over 500 programs and 500,000 bicycles worldwide. These systems are gaining attention for their role in addressing traffic, environmental, and health concerns. Unlike other transport services, bike sharing records precise data on travel duration, and departure/arrival points, effectively turning the system into a virtual sensor network that can help monitor city mobility and detect important events.
+  - Bike sharing systems are modern versions of traditional rentals, automating membership, rental, and returns.
+  - Users can rent and return bikes at different locations, with over 500 programs and 500,000 bicycles worldwide. These systems are gaining attention for their role in addressing traffic, environmental, and health concerns.
+  - Unlike other transport services, bike sharing records precise data on travel duration, and departure/arrival points, effectively turning the system into a virtual sensor network that can help monitor city mobility and detect important events.
     </p>
 
 - **Description:**
-  <p align="justify"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This dataset includes data on bike rentals across multiple seasons, with features capturing various environmental and temporal conditions. The dataset comprises several variables such as temperature, humidity, wind speed, season, holiday, working day, and weather situations. Each row represents daily rentals, which are influenced by these factors. The data provides an excellent opportunity to predict the number of rentals based on environmental factors. The main target variable is the number of rentals (count), which we aim to predict using <b>Linear Regression</b>.
+  - This dataset includes data on bike rentals across multiple seasons, with features capturing various environmental and temporal conditions.
+  - The dataset comprises several variables such as temperature, humidity, wind speed, season, holiday, working day, and weather situations.
+  - Each row represents daily rentals, which are influenced by these factors.
+  - The data provides an excellent opportunity to predict the number of rentals based on environmental factors. The main target variable is the number of rentals (count), which we aim to predict using <b>Linear Regression</b>.
     </p>
 
 
@@ -141,16 +144,20 @@ Where:
   - **`cnt`**: Count of total rental bikes including both casual and registered
 <br>
 
-### **Banknote Authentication Dataset**
+### **2. Banknote Authentication Dataset**
 
 <img align="right" src="https://st2.depositphotos.com/1538722/11652/i/450/depositphotos_116526898-stock-photo-euro-paper-banknotes.jpg" style="height: 320px;"></p>
 
 - **Information:**
-    <p align="justify"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The Banknote Authentication Dataset is a valuable resource for researchers and data scientists interested in exploring classification techniques for counterfeit detection. With the increasing prevalence of forged currency, the ability to accurately distinguish between authentic and forged banknotes is crucial for financial institutions and security agencies. This dataset provides a unique opportunity to apply machine learning algorithms to a real-world problem, allowing practitioners to develop robust models that can effectively classify banknotes based on various numerical features derived from image analysis.
+  - The Banknote Authentication Dataset is a valuable resource for researchers and data scientists interested in exploring classification techniques for counterfeit detection.
+  - With the increasing prevalence of forged currency, the ability to accurately distinguish between authentic and forged banknotes is crucial for financial institutions and security agencies.
+  - This dataset provides a unique opportunity to apply machine learning algorithms to a real-world problem, allowing practitioners to develop robust models that can effectively classify banknotes based on various numerical features derived from image analysis.
     </p>
 
 - **Description:**
-  <p align="justify"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This dataset consists of features extracted from images of banknotes using wavelet transformation. The primary task is to classify the banknotes as <b>authentic</b> or <b>forged</b>. The dataset includes four numerical features: variance of wavelet-transformed image, skewness of wavelet-transformed image, kurtosis of wavelet-transformed image, and entropy of image. These features serve as the independent variables, while the target variable (class) is binary, representing whether the banknote is real or fake. <b>Logistic Regression</b> is used to perform binary classification.
+  - This dataset consists of features extracted from images of banknotes using wavelet transformation.
+  - The primary task is to classify the banknotes as <b>authentic</b> or <b>forged</b>.
+  - The dataset includes four numerical features: variance of wavelet-transformed image, skewness of wavelet-transformed image, kurtosis of wavelet-transformed image, and entropy of image. These features serve as the independent variables, while the target variable (class) is binary, representing whether the banknote is real or fake. <b>Logistic Regression</b> is used to perform binary classification.
     </p>
 
 <img align="right" src="https://banknote-solutions.koenig-bauer.com/fileadmin/user_upload/News/Banknote/2022/22-025-L-Coverno-VariCash/KB_BNS_Digital_Solutions_ValiCash_Authenticate-1500x1000px.jpg" style="height: 180px;"></p>
@@ -285,9 +292,9 @@ The primary objectives of this project are:
 
 
 
-### **Visuals:**
+- ### **Visuals:**
 
-### Data Visualization Techniques
+  - ### Data Visualization Techniques
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This section presents visualizations used for analyzing and modeling the dataset.
 
@@ -303,8 +310,11 @@ The primary objectives of this project are:
 
 
 
-### Interpretation
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The analysis reveals that the Logistic Regression model can accurately distinguish between authentic and forged banknotes. The most important features for classification are variance and curtosis, which align with the physical characteristics of the banknotes. The model's high accuracy and detailed evaluation metrics suggest it is highly effective for this task. By analyzing the model coefficients, we can further understand how specific features contribute to the classification decisions, offering transparency into the model’s decision-making process.
+- ### Interpretation
+  - The analysis reveals that the Logistic Regression model can accurately distinguish between authentic and forged banknotes.
+  - The most important features for classification are variance and curtosis, which align with the physical characteristics of the banknotes.
+  - The model's high accuracy and detailed evaluation metrics suggest it is highly effective for this task.
+  - By analyzing the model coefficients, we can further understand how specific features contribute to the classification decisions, offering transparency into the model’s decision-making process.
 
 </div>
 <br>
