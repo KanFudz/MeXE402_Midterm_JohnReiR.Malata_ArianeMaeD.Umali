@@ -379,6 +379,108 @@ This structured methodology ensures thorough data analysis and a systematic appr
 
 #### Logistic Regression
 
+This analysis follows a structured approach, documented in the following steps:
+
+1. **Exploratory Data Analysis (EDA)**
+    - **Import Libraries**: Imported essential libraries such as pandas, numpy, matplotlib, seaborn, and scikit-learn for data handling, visualization, and modeling.
+      ```python
+      from sklearn.preprocessing import StandardScaler
+      import pandas as pd
+      from sklearn.model_selection import train_test_split
+      from sklearn.linear_model import LogisticRegression
+      from sklearn.metrics import confusion_matrix, accuracy_score
+      import matplotlib.pyplot as plt
+      import seaborn as sns
+      import numpy as np
+      from sklearn.impute import KNNImputer
+      ```
+    This step involves importing essential libraries, including tools for data handling, model training, and performance evaluation.
+
+    - **Data Loading**: Loaded the Banknote Authentication dataset from a CSV file for analysis.
+      ```python
+      banknote = pd.read_csv('banknote_authentication.csv')
+      ```
+      The dataset is loaded into a DataFrame named <b><code>banknote</code></b> for exploration and processing.
+      
+    - **Data Overview**: Examined the dataset shape, data types, and missing values to understand its structure and characteristics.
+        - Display the shape of the dataset:
+          ```python
+          print(f"Banknote Shape: {banknote.shape}")
+          ```
+        - Show data types for each column:
+          ```python
+          print("Banknote Data Types:")
+          print(banknote.dtypes)
+          ```
+        - View dataset information to check for missing values and column data types:
+          ```python
+          banknote.info()
+          ```
+          
+
+2. **Data Preprocessing**
+    - **Handling Missing Values**: Addressed missing values using the K-Nearest Neighbors (KNN) imputer to ensure complete data for model training.
+      ```python
+      imputer = KNNImputer()
+      banknote_imputed = imputer.fit_transform(banknote)
+      banknote = pd.DataFrame(banknote_imputed, columns=banknote.columns)
+      ```
+      This step fills in missing data to ensure complete inputs for model training.
+      
+    - **Data Splitting**: Divided the dataset into training and testing sets to facilitate model evaluation.
+      ```python
+      X = banknote.drop(columns='Class')
+      y = banknote['Class']
+      X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
+      ```
+      
+    - **Data Standardization**: Scaled features using StandardScaler to improve model performance.
+      ```python
+      scaler = StandardScaler()
+      X_train = scaler.fit_transform(X_train)
+      X_test = scaler.transform(X_test)
+      ```
+
+3. **Model Building**
+    - **Logistic Regression Model**: Trained a logistic regression model on the standardized training set.
+      ```python
+      model = LogisticRegression()
+      model.fit(X_train, y_train)
+      ```
+  
+    - **Prediction**: Used the trained model to predict labels on the test set.
+      ```python
+      y_pred = model.predict(X_test)
+      ```
+
+4. **Evaluation Metrics**
+     Evaluate model performance using metrics:
+    - **Confusion Matrix**: Generated a confusion matrix to assess the model's performance in terms of true positives, false positives, true negatives, and false negatives.
+      ```python
+      print(confusion_matrix(y_test, y_pred))
+      ```
+      
+    - **Accuracy Score**: Computed the accuracy score to provide a basic measure of the model's performance.
+      ```python
+      print(accuracy_score(y_test, y_pred))
+      ```
+
+5. **Model Interpretation and Analysis**
+    - **Feature Correlation**: Display a heatmap for correlation between features:
+      ```python
+      sns.heatmap(banknote.corr(), annot=True, cmap="coolwarm")
+      plt.title("Feature Correlation Matrix")
+      plt.show()
+      ```
+      
+    - **Performance Analysis**: Interpret the accuracy and confusion matrix to understand the model's performance and evaluate any areas for improvement or further analysis.
+      ```python
+      This methodology covers each primary step, from loading data to evaluating the model's performance. Adjust any steps based on specific requirements or updates in your code.
+      ```
+
+This structured methodology provides a comprehensive approach to developing, validating, and interpreting the Logistic Regression model on the Banknote Authentication dataset.
+
+
 ### Results Reflection
 
 - **Linear Regression**
