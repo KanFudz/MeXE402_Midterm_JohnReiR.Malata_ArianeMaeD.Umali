@@ -580,7 +580,7 @@ This structured methodology ensures thorough data analysis and a systematic appr
 This analysis follows a structured approach, documented in the following steps:
 
 1. **Exploratory Data Analysis (EDA)**
-    - **Import Libraries**: Imported essential libraries such as pandas, numpy, matplotlib, seaborn, and scikit-learn for data handling, visualization, and modeling.
+    - **Import Libraries**: Imported essential libraries such as `pandas`, `numpy`, `matplotlib`, `seaborn`, and `scikit-learn` for data handling, visualization, and modeling.
       ```python
       from sklearn.preprocessing import StandardScaler
       import pandas as pd
@@ -596,6 +596,7 @@ This analysis follows a structured approach, documented in the following steps:
 
     - **Data Loading**: Loaded the Banknote Authentication dataset from a CSV file for analysis.
       ```python
+      # Importing the Dataset
       banknote = pd.read_csv('banknote_authentication.csv')
       ```
       The dataset is loaded into a DataFrame named <b><code>banknote</code></b> for exploration and processing.
@@ -603,67 +604,89 @@ This analysis follows a structured approach, documented in the following steps:
     - **Data Overview**: Examined the dataset shape, data types, and missing values to understand its structure and characteristics.
         - Display the shape of the dataset:
           ```python
+          # Show Dataset Shape
           print(f"Banknote Shape: {banknote.shape}")
           ```
         - Show data types for each column:
           ```python
+          # Data types
           print("Banknote Data Types:")
           print(banknote.dtypes)
           ```
-        - View dataset information to check for missing values and column data types:
+        - Show Dataset Overview:
           ```python
+          # Dataset Overview
           banknote.info()
+          ```
+
+          - Display the dataset first five(5) rows:
+          ```python
+          # Display the first five (5) rows of the dataset
+          banknote.head(5)
           ```
           
 
 2. **Data Preprocessing**
     - **Handling Missing Values**: Addressed missing values using the K-Nearest Neighbors (KNN) imputer to ensure complete data for model training.
-      ```python
-      imputer = KNNImputer()
-      banknote_imputed = imputer.fit_transform(banknote)
-      banknote = pd.DataFrame(banknote_imputed, columns=banknote.columns)
-      ```
-      This step fills in missing data to ensure complete inputs for model training.
-      
-    - **Data Splitting**: Divided the dataset into training and testing sets to facilitate model evaluation.
-      ```python
-      X = banknote.drop(columns='Class')
-      y = banknote['Class']
-      X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
-      ```
-      
-    - **Data Standardization**: Scaled features using StandardScaler to improve model performance.
-      ```python
-      scaler = StandardScaler()
-      X_train = scaler.fit_transform(X_train)
-      X_test = scaler.transform(X_test)
-      ```
 
-3. **Model Building**
-    - **Logistic Regression Model**: Trained a logistic regression model on the standardized training set.
-      ```python
-      model = LogisticRegression()
-      model.fit(X_train, y_train)
-      ```
+      - **Finding Missing Values in the Dataset**:
+        ```python
+        # Verifying for any missing values in dataset
+        banknote.isnull().sum()
+        ```
+      - **Outliers Analysis**:
+        ```python
+        fig, ax = plt.subplots(figsize=(15, 8))
   
-    - **Prediction**: Used the trained model to predict labels on the test set.
-      ```python
-      y_pred = model.predict(X_test)
-      ```
+        # Boxplot for 'class' with purple color
+        sns.boxplot(data=banknote[['class']], color='purple')
+        ax.set_title('Class Count Outliers')
+        plt.show()
+        ```
 
-4. **Evaluation Metrics**
-     Evaluate model performance using metrics:
-    - **Confusion Matrix**: Generated a confusion matrix to assess the model's performance in terms of true positives, false positives, true negatives, and false negatives.
-      ```python
-      print(confusion_matrix(y_test, y_pred))
-      ```
-      
-    - **Accuracy Score**: Computed the accuracy score to provide a basic measure of the model's performance.
-      ```python
-      print(accuracy_score(y_test, y_pred))
-      ```
+      - **Variance, Skewness, Curtosis and Entropy Outliers**:
+        ```python
+        fig,ax=plt.subplots(figsize=(15,8))
+  
+        #Box Plot for Variance, Skewness, Curtosis, and Entropy Outliers
+        sns.boxplot(data=banknote[['variance','skewness','curtosis', 'entropy']])
+        ax.set_title('Variance, Skewness, Curtosis, and Entropy Outliers')
+        plt.show()
+        ```
 
-5. **Model Interpretation and Analysis**
+      - **Imputation of Outliers**
+        ```python
+        # Create DataFrame for outliers
+        var_skew = pd.DataFrame(banknote, columns=['variance', 'skewness'])
+
+        # Column names for outliers                      
+        cnames = ['variance', 'skewness']
+
+        # Replace outliers with NaN
+        for i in cnames:
+            q75, q25 = np.percentile(var_skew[i], [75, 25])  # Divide data into 75%quantile         and 25%quantile.
+            iqr = q75 - q25  # Interquartile range
+            min_val = q25 - (iqr * 1.5)  # Inner fence
+            max_val = q75 + (iqr * 1.5)  # Outer fence
+            var_skew.loc[var_skew[i] < min_val, i] = np.nan  # Replace outliers with NaN
+            var_skew.loc[var_skew[i] > max_val, i] = np.nan  # Replace outliers with NaN
+        ```
+     
+     - **Replacing the Original Dataset with Imputated Data**:
+       ```python
+       # Impute missing values (from outliers) using KNN Imputer
+       imputer = KNNImputer(n_neighbors=5)
+       var_skew_imputed = pd.DataFrame(imputer.fit_transform(var_skew),      columns=var_skew.columns)
+       
+       #Replacing the imputated windspeed
+       banknote['variance']=banknote['variance'].replace(var_skew['variance'])
+       #Replacing the imputated humidity
+       banknote['skewness']=banknote['skewness'].replace(var_skew['skewness'])
+       banknote.head(5)
+       ```
+   
+      This step fills in missing data to ensure complete inputs for model training.
+
     - **Feature Correlation**: Display a heatmap for correlation between features:
       ```python
       sns.heatmap(banknote.corr(), annot=True, cmap="coolwarm")
@@ -671,13 +694,192 @@ This analysis follows a structured approach, documented in the following steps:
       plt.show()
       ```
       
-    - **Performance Analysis**: Interpret the accuracy and confusion matrix to understand the model's performance and evaluate any areas for improvement or further analysis.
+    - **Data Splitting**: Divided the dataset into training and testing sets to facilitate model evaluation.
+    
+      - **Getting Inputs and Outputs**
+        ```python
+        X = banknote.iloc[:, :-1].values  # All features except the last column (class)
+        y = banknote.iloc[:, -1].values  # Target variable (class)
+        ```
+
+        ```python
+        print("Input Features (X):")
+        print(X)
+        ```
+
+        ```python
+        print("\nTarget Variable (y):")
+        print(y)
+        ```
+
+      - **Creating Training Set and Test Set**
+        ```python
+        # Split the Dataset into Train and Test Sets
+        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=45)
+        ```
+
+        ```python
+        print("\nTraining Features (X_train):")
+        print(X_train)
+        ```
+
+        ```python
+        print("\nTest Features (X_test):")
+        print(X_test)
+        ```
+
+        ```python
+        print("\nTraining Target (y_train):")
+        print(y_train)
+        ```
+
+        ```python
+        print("\nTest Target (y_test):")
+        print(y_test)
+        ```
+
+
+    - **Data Standardization**: Scaled features using StandardScaler to improve model performance.
       ```python
-      This methodology covers each primary step, from loading data to evaluating the model's performance. Adjust any steps based on specific requirements or updates in your code.
+      scaler = StandardScaler()
+      X_train = scaler.fit_transform(X_train)
       ```
 
-This structured methodology provides a comprehensive approach to developing, validating, and interpreting the Logistic Regression model on the Banknote Authentication dataset.
+      ```python
+      print("\nScaled Training Features:")
+      print(X_train)
+      ```
 
+4. **Model Building**
+    - **Logistic Regression Model**: Trained a logistic regression model on the standardized training set.
+
+      - **Building the Model**
+        ```python
+        model = LogisticRegression(random_state=45)
+        ```
+      - **Training the Model**
+        ```python
+        model.fit(X_train, y_train)
+        ```
+        
+    - **Inference**: Making Predictions on the Test Set
+      ```python
+      y_pred = model.predict(scaler.transform(X_test))
+      ```
+
+      ```python
+      print("Predicted Target Values (y_pred):")
+      print(y_pred)
+      ```
+  
+    - **Prediction**: Used the trained model to predict labels on the test set.
+      ```python
+      model.predict(scaler.transform([[3.6216, 8.6661, -2.8073, -0.44699]]))
+      ```
+
+      ```python
+      # Input the banknote features
+      variance_input = 3.6216
+      skewness_input = 8.6661
+      kurtosis_input = -2.8073
+      entropy_input = -0.44699
+      
+      # Create an array with the input values
+      banknote_features = [[variance_input, skewness_input, kurtosis_input, entropy_input]]
+      
+      # Predict using the model and scale the input
+      prediction = model.predict(scaler.transform(banknote_features))
+      
+      # Output the prediction
+      print(f"Prediction for the banknote features: {prediction[0]}")
+      
+      # Interpretation
+      if prediction[0] == 0:
+          print("The banknote is predicted to be Forged.")
+      else:
+          print("The banknote is predicted to be Authentic.")
+      ```
+
+5. **Evaluation Metrics**
+     Evaluate model performance using metrics:
+    - **Confusion Matrix**: Generated a confusion matrix to assess the model's performance in terms of true positives, false positives, true negatives, and false negatives.
+      ```python
+      cm = confusion_matrix(y_test, y_pred)
+      print(f"Confusion Matrix:\n{cm}")
+      ```
+      
+      - **Visualizing the Confusion Matrix**
+        ```python
+        #size of the figure
+        plt.figure(figsize=(8, 6)) 
+        
+        #Visualizing the Confusion Matrix with a Heatmap
+        sns.heatmap(cm, annot=True, fmt='d', cmap='Purples', cbar=False, 
+                    xticklabels=['Forged', 'Authentic'], yticklabels=['Forged', 'Authentic']) 
+        
+        # Labeling the Plot
+        plt.ylabel('Actual')
+        plt.xlabel('Predicted')
+        plt.title('Confusion Matrix')
+        plt.show()
+        ```
+      
+    - **Accuracy Score**: Computed the accuracy score to provide a basic measure of the model's performance.
+      ```python
+      # Calculating Model Accuracy
+      accuracy = accuracy_score(y_test, y_pred)
+      print(f"Accuracy: {accuracy:}")
+      ```
+      
+    - **Model Coefficients**
+      ```python
+      # Model Coefficients
+      print('Model coefficients :',model.coef_)
+      
+      # Model Intercept Value
+      print('Model intercept value :',model.intercept_)
+      ```
+
+      ```python
+      # Get coefficients for the features
+      coefficients = model.coef_[0]  # Only the first row, as it's binary classification
+      
+      # Define feature names manually if X_train was a NumPy array
+      features = ['variance', 'skewness', 'kurtosis', 'entropy']
+      
+      # Create a DataFrame to display feature importance
+      coef_df = pd.DataFrame({'Feature': features, 'Coefficient': coefficients})
+      print("Feature importance:\n", coef_df)
+      ```
+      
+       - **Visualizing the Feature Importance of Model Coefficient**
+         ```python
+         model = LogisticRegression()
+         model.fit(X_train, y_train)
+        
+         importance = model.coef_[0]
+         feature_importance = pd.Series(importance, index=banknote.columns[:-1])
+         feature_importance.plot(kind='barh', color='purple')
+         plt.title('Feature Importance')
+         plt.show()
+         ```
+  
+      
+
+6. **Model Interpretation**
+      
+    - **Performance Analysis**: Interpret the accuracy and confusion matrix to understand the model's performance and evaluate any areas for improvement or further analysis.
+      ```python
+      print("\nModel Interpretation:")
+      print("The logistic regression model has an accuracy of {:.2f}% on the test set.".format(accuracy * 100))
+      print("The confusion matrix indicates how many of the actual classes were correctly classified.")
+      print("Each coefficient represents the change in the log odds of the target variable for a one-unit change in the predictor variable.")
+      print("A positive coefficient indicates that as the predictor increases, the likelihood of the target class being 1 (e.g., Authentic) increases.")
+      print("Conversely, a negative coefficient indicates that as the predictor increases, the likelihood of the target class being 0 (e.g., Forged) increases.")
+      ```
+<div align="justify">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This structured methodology provides a comprehensive approach to developing, validating, and interpreting the Logistic Regression model on the Banknote Authentication dataset.
+</div>
 
 ### Results Reflection
 
