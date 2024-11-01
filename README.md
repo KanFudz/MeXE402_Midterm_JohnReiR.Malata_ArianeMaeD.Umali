@@ -27,10 +27,10 @@
       - [Interpretation](#interpretation)
   - [VII. Documentation](#vii-documentation)
       - [Methodology](#methodology)
-         - [Linear Regression](#linearregression)
-         - [Logistic Regression](#logisticregression)
-      - [Results Reflection](#resultsreflection)
-      - [Comparison of Regression Methods](#comparisonofregressionmethods)
+         - [Linear Regression](#linear-regression)
+         - [Logistic Regression](#logistic-regression)
+      - [Results Reflection](#results-reflection)
+      - [Comparison of Regression Methods](#comparison-of-regression-methods)
       - [Limitations](#limitations)
   - [VIII. Refererences](#viii-references)
   - [IX. Group Members](#ix-group-members)
@@ -376,6 +376,8 @@ This analysis follows a structured approach, documented in the following steps:
    - **Prediction Testing**: Used test data to evaluate the model’s predictive power and consistency.
 
 This structured methodology ensures thorough data analysis and a systematic approach to building and evaluating the linear regression model.
+
+#### Logistic Regression
 
 ### Results Reflection
 
