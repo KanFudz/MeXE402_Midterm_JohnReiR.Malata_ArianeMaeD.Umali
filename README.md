@@ -514,65 +514,78 @@ This analysis follows a structured approach, documented in the following steps:
           #Fit the trained model
           lr_model.fit(X_train,y_train)
           ```
-   - **Evaluation Metrics**: Computed metrics such as R², Mean Absolute Error (MAE), and accuracy score to assess model performance.
-        - Accuracy of the Model
-          ```python
-          #Accuracy of the model
-          lr=lr_model.score(X_train,y_train)
-          print('Accuracy of the model :',lr)
-          print('Model coefficients :',lr_model.coef_)
-          print('Model intercept value :',lr_model.intercept_)
-          ```
-        - Cross Validation Prediction
-          ```python
-          #Cross validation prediction
-          predict=cross_val_predict(lr_model,X_train,y_train,cv=3)
-          predict
-          ```
-        - R-squared
-          ```python
-          #R-squared scores
-          r2_scores = cross_val_score(lr_model, X_train, y_train, cv=3)
-          print('R-squared scores :',np.average(r2_scores))
-          ```
-        - Mean Absolute Error Scores
-          ```python
-          #Root mean square error
-          rmse=math.sqrt(metrics.mean_squared_error(y_test,lr_pred))
-          print('Root mean square error :',rmse)
-          ```
-        - Residual Plot
-          ```python
-          #Residual plot
-          fig, ax = plt.subplots(figsize=(15,8))
-          ax.scatter(y_test, y_test-lr_pred)
-          ax.axhline(lw=2,color='black')
-          ax.set_xlabel('Observed')
-          ax.set_ylabel('Residuals')
-          ax.title.set_text("Residual Plot")
-          plt.show()
-          ```
-        - Comparison of Actual and Predicted values
-          ```python
-          Bike_df1=pd.DataFrame(y_test,columns=['y_test'])
-          Bike_df2=pd.DataFrame(lr_pred,columns=['lr_pred'])
-          Bike_predictions=pd.merge(Bike_df1,Bike_df2,left_index=True,right_index=True)
-          Bike_predictions.to_csv('Bike_Renting_Python.csv')
-          Bike_predictions
-          ```
-          ```python
-          # Plot
-          plt.figure(figsize=(10, 6))
-          sns.scatterplot(x='y_test', y='lr_pred', data=Bike_predictions)
-          plt.plot([Bike_predictions.min().min(), Bike_predictions.max().max()], 
-                   [Bike_predictions.min().min(), Bike_predictions.max().max()], 
-                   color='red', linestyle='--')  # Line for perfect prediction
+5. **Evaluation Metrics**: Computed metrics such as R², Mean Absolute Error (MAE), and accuracy score to assess model performance.
+   - Accuracy of the Model
+     ```python
+     #Accuracy of the model
+     lr=lr_model.score(X_train,y_train)
+     print('Accuracy of the model :',lr)
+     print('Model coefficients :',lr_model.coef_)
+     print('Model intercept value :',lr_model.intercept_)
+     ```
+    - Cross Validation Prediction
+      ```python
+      #Cross validation prediction
+      predict=cross_val_predict(lr_model,X_train,y_train,cv=3)
+      predict
+      ```
+    - R-squared
+      ```python
+      #R-squared scores
+      r2_scores = cross_val_score(lr_model, X_train, y_train, cv=3)
+      print('R-squared scores :',np.average(r2_scores))
+      ```
+    - Mean Absolute Error Scores
+      ```python
+      #Root mean square error
+      rmse=math.sqrt(metrics.mean_squared_error(y_test,lr_pred))
+      print('Root mean square error :',rmse)
+      ```
+    - Residual Plot
+      ```python
+      #Residual plot
+      fig, ax = plt.subplots(figsize=(15,8))
+      ax.scatter(y_test, y_test-lr_pred)
+      ax.axhline(lw=2,color='black')
+      ax.set_xlabel('Observed')
+      ax.set_ylabel('Residuals')
+      ax.title.set_text("Residual Plot")
+      plt.show()
+      ```
+    - Comparison of Actual and Predicted values
+      ```python
+      Bike_df1=pd.DataFrame(y_test,columns=['y_test'])
+      Bike_df2=pd.DataFrame(lr_pred,columns=['lr_pred'])
+      Bike_predictions=pd.merge(Bike_df1,Bike_df2,left_index=True,right_index=True)
+      Bike_predictions.to_csv('Bike_Renting_Python.csv')
+      Bike_predictions
+      ```
+      ```python
+       # Plot
+      plt.figure(figsize=(10, 6))
+      sns.scatterplot(x='y_test', y='lr_pred', data=Bike_predictions)
+      plt.plot([Bike_predictions.min().min(), Bike_predictions.max().max()], 
+      [Bike_predictions.min().min(), Bike_predictions.max().max()], 
+      color='red', linestyle='--')  # Line for perfect prediction
           
-          plt.title('Actual vs Predicted Bike Rentals')
-          plt.xlabel('Actual Rentals')
-          plt.ylabel('Predicted Rentals')
-          plt.show()
-          ```
+      plt.title('Actual vs Predicted Bike Rentals')
+      plt.xlabel('Actual Rentals')
+      plt.ylabel('Predicted Rentals')
+      plt.show()
+      ```
+6. **Model Interpretation**
+  - **Model Coefficients**:
+    - Each coefficient indicates the expected change in bike rentals per unit increase in that feature, with all others held constant.
+    - **Positive coefficients** (e.g., for temperature) suggest an increase in rentals with higher values.
+    - **Negative coefficients** (e.g., for humidity) imply a decrease in rentals as values increase.
+    - The magnitude of each coefficient shows the strength of its impact on rental counts.
+
+  - **Predictive Power**:
+    - **Accuracy Score**: The model achieved an accuracy score (computed on training data), giving an initial measure of how well it captures data patterns.
+    - **R² Score**: Averaged across cross-validation, this score shows the proportion of rental count variability explained by the model’s features.
+    - **Mean Absolute Error (MAE)**: Represents the average absolute error between predicted and actual rental counts, with lower values indicating closer predictions.
+
+These results suggest that the model effectively leverages key features to forecast bike rentals accurately, while coefficients provide insights into the most influential factors. 
 This structured methodology ensures thorough data analysis and a systematic approach to building and evaluating the linear regression model.
 
 #### Logistic Regression
@@ -624,7 +637,7 @@ This analysis follows a structured approach, documented in the following steps:
           # Display the first five (5) rows of the dataset
           banknote.head(5)
           ```
-          
+      
 
 2. **Data Preprocessing**
     - **Handling Missing Values**: Addressed missing values using the K-Nearest Neighbors (KNN) imputer to ensure complete data for model training.
