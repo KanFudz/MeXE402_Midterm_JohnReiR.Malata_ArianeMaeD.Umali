@@ -541,7 +541,7 @@ This analysis follows a structured approach, documented in the following steps:
       lr_pred=lr_model.predict(X_test)
       lr_pred
       ```
-    - Making Predictions off a single data point
+    - Making Predictions off a single data point (Row 500)
       ```python
       # Define the feature names and values for the single data point
       single_data_point = pd.DataFrame({
@@ -592,7 +592,7 @@ This analysis follows a structured approach, documented in the following steps:
       ax.title.set_text("Residual Plot")
       plt.show()
       ```
-    - Comparison of Actual and Predicted values
+    - Comparison of Test and Predicted values
       ```python
       Bike_df1=pd.DataFrame(y_test,columns=['y_test'])
       Bike_df2=pd.DataFrame(lr_pred,columns=['lr_pred'])
