@@ -15,6 +15,7 @@
         - [Key Metrics](#key-metrics)
       - [Results](#results)
       - [Visuals](#visuals)
+      - [Interpretation](#interpretation)
   - [VI. Logistic Regression Analysis](#vi-logistic-regression-analysis---banknote-authentication-dataset)
       - [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
       - [Data Preprocessing](#data-preprocessing)
@@ -239,6 +240,20 @@ The primary objectives of this project are:
 | **Scatter Plot**: Shows the relationship between actual and predicted values. | <img src="https://github.com/user-attachments/assets/b90baa8c-9145-4584-b150-18404fae6a38" alt="Scatter Plot" width="400"/> |
 
 
+- ### Interpretation
+
+- **Model Coefficients**:
+  - Each coefficient indicates the expected change in bike rentals per unit increase in that feature, with all others held constant.
+  - **Positive coefficients** (e.g., for temperature) suggest an increase in rentals with higher values.
+  - **Negative coefficients** (e.g., for humidity) imply a decrease in rentals as values increase.
+  - The magnitude of each coefficient shows the strength of its impact on rental counts.
+
+- **Predictive Power**:
+  - **Accuracy Score**: The model achieved an accuracy score (computed on training data), giving an initial measure of how well it captures data patterns.
+  - **R² Score**: Averaged across cross-validation, this score shows the proportion of rental count variability explained by the model’s features.
+  - **Mean Absolute Error (MAE)**: Represents the average absolute error between predicted and actual rental counts, with lower values indicating closer predictions.
+
+These results suggest that the model effectively leverages key features to forecast bike rentals accurately, while coefficients provide insights into the most influential factors.
 
 </div>
 <br>
