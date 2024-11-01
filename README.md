@@ -26,6 +26,12 @@
       - [Visuals](#visuals)
       - [Interpretation](#interpretation)
   - [VII. Documentation](#vii-documentation)
+      - [Methodology](#methodology)
+         - [Linear Regression](#linearregression)
+         - [Logistic Regression](#logisticregression)
+      - [Results Reflection](#resultsreflection)
+      - [Comparison of Regression Methods](#comparisonofregressionmethods)
+      - [Limitations](#limitations)
   - [VIII. Refererences](#viii-references)
   - [IX. Group Members](#ix-group-members)
 <hr> 
@@ -339,6 +345,38 @@ These results suggest that the model effectively leverages key features to forec
 ## VII. Documentation
 <p align="justify"> 
   
+### Methodology
+
+#### Linear Regression
+
+This analysis follows a structured approach, documented in the following steps:
+
+1. **Exploratory Data Analysis (EDA)**
+   - **Import Libraries**: Imported essential libraries such as `pandas`, `numpy`, `matplotlib`, `seaborn`, and `scikit-learn` for data handling, visualization, and modeling.
+   - **Data Loading**: Loaded the dataset from a CSV file for analysis.
+   - **Data Overview**: Examined the dataset shape, data types, and initial rows to understand its structure and characteristics.
+   - **Renaming Columns**: Renamed columns to more descriptive names to improve readability.
+   - **Typecasting**: Converted appropriate numerical columns to categorical data types to better represent the data.
+
+2. **Data Preprocessing**
+   - **Statistical Summary**: Generated summary statistics for numerical columns to identify key data properties.
+   - **Handling Missing Values**: Addressed any missing values in the dataset using appropriate imputation methods (e.g., KNN).
+   - **Splitting Data**: Divided the dataset into training and testing sets for model evaluation.
+
+3. **Feature Engineering**
+   - **Feature Selection and Transformation**: Selected relevant features and made transformations to enhance model performance.
+   - **Categorical Encoding**: Converted categorical variables into numerical formats suitable for modeling.
+
+4. **Model Building**
+   - **Linear Regression Model**: Trained a linear regression model using the selected features.
+   - **Evaluation Metrics**: Computed metrics such as R², Mean Absolute Error (MAE), and accuracy score to assess model performance.
+
+5. **Model Interpretation and Analysis**
+   - **Coefficients Analysis**: Interpreted model coefficients to understand the influence of each feature on bike rentals.
+   - **Prediction Testing**: Used test data to evaluate the model’s predictive power and consistency.
+
+This structured methodology ensures thorough data analysis and a systematic approach to building and evaluating the linear regression model.
+
 ### Results Reflection
 
 - **Linear Regression**
