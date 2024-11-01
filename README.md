@@ -535,6 +535,46 @@ This analysis follows a structured approach, documented in the following steps:
       r2_scores = cross_val_score(lr_model, X_train, y_train, cv=3)
       print('R-squared scores :',np.average(r2_scores))
       ```
+    - Inference
+      ```python
+      #predict the model
+      lr_pred=lr_model.predict(X_test)
+      lr_pred
+      ```
+    - Making Predictions off a single data point
+      ```python
+      # Define the feature names and values for the single data point
+      single_data_point = pd.DataFrame({
+          'season': [3],
+          'year': [0],
+          'month': [7],
+          'holiday': [0],
+          'weekday': [1],
+          'workingday': [1],
+          'weather_condition': [1],
+          'temp': [0.746667],
+          'atemp': [0.703925],
+          'hum': [0.65125],
+          'windspeed': [0.215804]
+      })
+      
+      # Encode categorical features to match training data structure
+      cat_attributes = ['season', 'holiday', 'workingday', 'weather_condition', 'year']
+      single_data_encoded = pd.get_dummies(single_data_point, columns=cat_attributes)
+      
+      # Add any missing columns from the training data with a value of 0
+      missing_cols = set(train_encoded_attributes.columns) - set(single_data_encoded.columns)
+      for col in missing_cols:
+          single_data_encoded[col] = 0
+      
+      # Ensure the column order matches the training data
+      single_data_encoded = single_data_encoded[train_encoded_attributes.columns]
+      
+      # Make the prediction
+      lr_pred1 = lr_model.predict(single_data_encoded)
+      print("Predicted total count:", lr_pred1[0])
+      print("Actual Value from Dataset: 6118")
+      ```
     - Mean Absolute Error Scores
       ```python
       #Root mean square error
