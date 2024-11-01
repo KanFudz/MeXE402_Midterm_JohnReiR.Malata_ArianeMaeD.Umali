@@ -707,7 +707,7 @@ This analysis follows a structured approach, documented in the following steps:
         plt.show()
         ```
 
-      - **Imputation of Outliers**
+      - **Imputation of Outliers**:
         ```python
         # Create DataFrame for outliers
         var_skew = pd.DataFrame(banknote, columns=['variance', 'skewness'])
@@ -749,7 +749,7 @@ This analysis follows a structured approach, documented in the following steps:
       
     - **Data Splitting**: Divided the dataset into training and testing sets to facilitate model evaluation.
     
-      - **Getting Inputs and Outputs**
+      - **Getting Inputs and Outputs**:
         ```python
         X = banknote.iloc[:, :-1].values  # All features except the last column (class)
         y = banknote.iloc[:, -1].values  # Target variable (class)
@@ -765,7 +765,7 @@ This analysis follows a structured approach, documented in the following steps:
         print(y)
         ```
 
-      - **Creating Training Set and Test Set**
+      - **Creating Training Set and Test Set**:
         ```python
         # Split the Dataset into Train and Test Sets
         X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=45)
@@ -806,11 +806,11 @@ This analysis follows a structured approach, documented in the following steps:
 4. **Model Building**
     - **Logistic Regression Model**: Trained a logistic regression model on the standardized training set.
 
-      - **Building the Model**
+      - **Building the Model**:
         ```python
         model = LogisticRegression(random_state=45)
         ```
-      - **Training the Model**
+      - **Training the Model**:
         ```python
         model.fit(X_train, y_train)
         ```
@@ -861,7 +861,7 @@ This analysis follows a structured approach, documented in the following steps:
       print(f"Confusion Matrix:\n{cm}")
       ```
       
-      - **Visualizing the Confusion Matrix**
+      - **Visualizing the Confusion Matrix**:
         ```python
         #size of the figure
         plt.figure(figsize=(8, 6)) 
@@ -884,7 +884,7 @@ This analysis follows a structured approach, documented in the following steps:
       print(f"Accuracy: {accuracy:}")
       ```
       
-    - **Model Coefficients**
+    - **Model Coefficients**:
       ```python
       # Model Coefficients
       print('Model coefficients :',model.coef_)
@@ -905,7 +905,7 @@ This analysis follows a structured approach, documented in the following steps:
       print("Feature importance:\n", coef_df)
       ```
       
-       - **Visualizing the Feature Importance of Model Coefficient**
+       - **Visualizing the Feature Importance of Model Coefficient**:
          ```python
          model = LogisticRegression()
          model.fit(X_train, y_train)
