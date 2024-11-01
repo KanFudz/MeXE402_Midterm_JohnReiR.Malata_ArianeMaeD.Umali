@@ -352,29 +352,227 @@ These results suggest that the model effectively leverages key features to forec
 This analysis follows a structured approach, documented in the following steps:
 
 1. **Exploratory Data Analysis (EDA)**
-   - **Import Libraries**: Imported essential libraries such as `pandas`, `numpy`, `matplotlib`, `seaborn`, and `scikit-learn` for data handling, visualization, and modeling.
+   - **Import Libraries**: Imported essential libraries such as `pandas`, `numpy`, `matplotlib`, `seaborn`, and `scikit-learn` for data handling, visualization, and modeling.## Analysis Steps
+      ```python
+      # Import necessary libraries for data manipulation, visualization, and machine learning
+      import numpy as np
+      import pandas as pd
+      import matplotlib.pyplot as plt
+      import seaborn as sns
+      from sklearn.model_selection import train_test_split
+      from sklearn.linear_model import LinearRegression
+      from sklearn.metrics import r2_score, mean_absolute_error
+      from scipy import stats
+      from fancyimpute import KNN
+      ```
    - **Data Loading**: Loaded the dataset from a CSV file for analysis.
+      ```python
+      #Load Dataset
+      # Update the file path as per your local setup
+      bikeds = pd.read_csv(r"C:\Users\John Rei\Documents\BikeRental.csv")
+      ```
    - **Data Overview**: Examined the dataset shape, data types, and initial rows to understand its structure and characteristics.
+        - Display the shape of the dataset:
+          ```python
+          bikeds.shape
+          ```
+        - Show data types for each column:
+          ```python
+          bikeds.dtypes
+          ```
+        - Get the dataset overview:
+          ```python
+          # Show the first five rows of the dataset to get an overview of the data
+          bikeds.head(5)
+          ```
    - **Renaming Columns**: Renamed columns to more descriptive names to improve readability.
+        - Renaming the columns
+          ```python  
+          # Rename columns to make them more descriptive
+          bikeds.rename(columns={'instant': "rec_id", 'dteday':'datetime','yr':'year','mnth':'month','weathersit':'weather_condition','hum':'humidity','cnt':'total_count'}, inplace=True)
+          ```
+        - Checking if the renaming is successful
+          ```python
+          # Display the dataset to check if renaming was successful
+          bikeds.head(5)
+          ```
    - **Typecasting**: Converted appropriate numerical columns to categorical data types to better represent the data.
-
+        - Conversion of columns
+          ```python
+          # Convert appropriate columns to categorical data types
+          bikeds['datetime'] = pd.to_datetime(bikeds['datetime'])
+          
+          bikeds['season']=bikeds.season.astype('category')
+          bikeds['year']=bikeds.year.astype('category')
+          bikeds['month']=bikeds.month.astype('category')
+          bikeds['holiday']=bikeds.holiday.astype('category')
+          bikeds['weekday']=bikeds.weekday.astype('category')
+          bikeds['workingday']=bikeds.workingday.astype('category')
+          bikeds['weather_condition']=bikeds.weather_condition.astype('category')
+          ```
+        - Getting the result
+          ```python
+          # Provide a statistical summary of the numerical columns
+          bikeds.describe(include=[np.number])
+          ```
 2. **Data Preprocessing**
    - **Statistical Summary**: Generated summary statistics for numerical columns to identify key data properties.
-   - **Handling Missing Values**: Addressed any missing values in the dataset using appropriate imputation methods (e.g., KNN).
+   - **Handling Missing Values**: Addressed any missing values in the dataset. 
+      ```python
+      #Verifying if there are missing values in dataset
+      bikeds.isnull().sum()
+      ```
+   - **Outlier Analysis**: Screening of the dataset for outliers.
+        - Checking the data for outliers
+             ```python
+             fig,ax=plt.subplots(figsize=(15,8))
+             #Boxplot for total_count outliers
+             sns.boxplot(data=bikeds[['total_count']])
+             ax.set_title('total_count outliers')
+             plt.show()
+             fig,ax=plt.subplots(figsize=(15,8))
+             #Box plot for Temp_windspeed_humidity_outliers
+             sns.boxplot(data=bikeds[['temp','windspeed','humidity']])
+             ax.set_title('Temp_windspeed_humidity_outiers')
+             plt.show()
+             ```
+        - Imputation of Outliers
+             ```python
+             from fancyimpute import KNN
+             #create dataframe for outliers
+             wind_hum = pd.DataFrame(bikeds,columns=['windspeed','humidity']) 
+             cnames = ['windspeed','humidity']
+            
+             for i in cnames:
+               q75,q25 = np.percentile(wind_hum.loc[:,i], [75,25])  # Divide data into 75% and 25% quantiles
+               iqr = q75 - q25  # Inter quantile range
+               min = q25 - (iqr * 1.5)  # inner fence
+               max = q75 + (iqr * 1.5)  # outer fence
+               wind_hum.loc[wind_hum.loc[:,i] < min,:i] = np.nan  # Replace with NA
+               wind_hum.loc[wind_hum.loc[:,i] > max,:i] = np.nan  # Replace with NA
+            
+              # Imputating the outliers by mean Imputation
+              wind_hum['windspeed'] = wind_hum['windspeed'].fillna(wind_hum['windspeed'].mean())
+              wind_hum['humidity'] = wind_hum['humidity'].fillna(wind_hum['humidity'].mean())
+              ```
    - **Splitting Data**: Divided the dataset into training and testing sets for model evaluation.
-
+        ```python
+        #Split the dataset into the train and test data
+        from sklearn.model_selection import train_test_split
+        X_train,X_test,y_train,y_test=train_test_split(bikeds.iloc[:,0:-3],bikeds.iloc[:,-1],test_size=0.2, random_state=50)
+        
+        #Reset train index values
+        X_train.reset_index(inplace=True)
+        y_train=y_train.reset_index()
+        
+        # Reset train index values
+        X_test.reset_index(inplace=True)
+        y_test=y_test.reset_index()
+        
+        print(X_train.shape,X_test.shape,y_train.shape,y_test.shape)
+        print(y_train.head())
+        print(y_test.head())
+        ```
 3. **Feature Engineering**
    - **Feature Selection and Transformation**: Selected relevant features and made transformations to enhance model performance.
-   - **Categorical Encoding**: Converted categorical variables into numerical formats suitable for modeling.
+       ```python
+       # Create a new dataset for train attributes
+       train_attributes = X_train[['season', 'month', 'year', 'weekday', 'holiday', 'workingday', 'weather_condition', 'humidity', 'temp', 'atemp', 'windspeed']]
 
+        # Create a new dataset for test attributes
+        test_attributes = X_test[['season', 'month', 'year', 'weekday', 'holiday', 'workingday', 'humidity', 'temp', 'atemp', 'windspeed', 'weather_condition']]
+        
+        # Categorical attributes
+        cat_attributes = ['season', 'holiday', 'workingday', 'weather_condition', 'year']
+        
+        # Numerical attributes
+        num_attributes = ['temp', 'atemp', 'windspeed', 'humidity', 'month', 'weekday']
+        ```
+   - **Categorical Encoding**: Converted categorical variables into numerical formats suitable for modeling.
+        ```python
+        #To get dummy variables to encode the categorical features to numeric
+        train_encoded_attributes=pd.get_dummies(train_attributes,columns=cat_attributes)
+        print('Shape of transfomed dataframe::',train_encoded_attributes.shape)
+        train_encoded_attributes.head(5)
+        ```
 4. **Model Building**
    - **Linear Regression Model**: Trained a linear regression model using the selected features.
+        - Training the dataset
+          ```python
+          #Training dataset for modelling
+          X_train=train_encoded_attributes
+          y_train=y_train.total_count.values
+          ```
+        - Defining Linear Regression Model
+          ```python
+          #training model
+          lr_model=LinearRegression()
+          lr_model
+          ```
+        - Fitting the Training Model
+          ```python
+          #Fit the trained model
+          lr_model.fit(X_train,y_train)
+          ```
    - **Evaluation Metrics**: Computed metrics such as R², Mean Absolute Error (MAE), and accuracy score to assess model performance.
-
-5. **Model Interpretation and Analysis**
-   - **Coefficients Analysis**: Interpreted model coefficients to understand the influence of each feature on bike rentals.
-   - **Prediction Testing**: Used test data to evaluate the model’s predictive power and consistency.
-
+        - Accuracy of the Model
+          ```python
+          #Accuracy of the model
+          lr=lr_model.score(X_train,y_train)
+          print('Accuracy of the model :',lr)
+          print('Model coefficients :',lr_model.coef_)
+          print('Model intercept value :',lr_model.intercept_)
+          ```
+        - Cross Validation Prediction
+          ```python
+          #Cross validation prediction
+          predict=cross_val_predict(lr_model,X_train,y_train,cv=3)
+          predict
+          ```
+        - R-squared
+          ```python
+          #R-squared scores
+          r2_scores = cross_val_score(lr_model, X_train, y_train, cv=3)
+          print('R-squared scores :',np.average(r2_scores))
+          ```
+        - Mean Absolute Error Scores
+          ```python
+          #Root mean square error
+          rmse=math.sqrt(metrics.mean_squared_error(y_test,lr_pred))
+          print('Root mean square error :',rmse)
+          ```
+        - Residual Plot
+          ```python
+          #Residual plot
+          fig, ax = plt.subplots(figsize=(15,8))
+          ax.scatter(y_test, y_test-lr_pred)
+          ax.axhline(lw=2,color='black')
+          ax.set_xlabel('Observed')
+          ax.set_ylabel('Residuals')
+          ax.title.set_text("Residual Plot")
+          plt.show()
+          ```
+        - Comparison of Actual and Predicted values
+          ```python
+          Bike_df1=pd.DataFrame(y_test,columns=['y_test'])
+          Bike_df2=pd.DataFrame(lr_pred,columns=['lr_pred'])
+          Bike_predictions=pd.merge(Bike_df1,Bike_df2,left_index=True,right_index=True)
+          Bike_predictions.to_csv('Bike_Renting_Python.csv')
+          Bike_predictions
+          ```
+          ```python
+          # Plot
+          plt.figure(figsize=(10, 6))
+          sns.scatterplot(x='y_test', y='lr_pred', data=Bike_predictions)
+          plt.plot([Bike_predictions.min().min(), Bike_predictions.max().max()], 
+                   [Bike_predictions.min().min(), Bike_predictions.max().max()], 
+                   color='red', linestyle='--')  # Line for perfect prediction
+          
+          plt.title('Actual vs Predicted Bike Rentals')
+          plt.xlabel('Actual Rentals')
+          plt.ylabel('Predicted Rentals')
+          plt.show()
+          ```
 This structured methodology ensures thorough data analysis and a systematic approach to building and evaluating the linear regression model.
 
 #### Logistic Regression
